@@ -364,7 +364,7 @@ MDR is the backbone token of the Modulr network and the primary reward mechanism
     - This design ensures the circulating supply remains balanced across ecosystems.
     - _(Note: The current v1 contract introduces a controlled bottleneck to maintain stability. A v2 contract is planned to optimize throughput and reduce friction.)_
         
-3. **Daily Emission:** Begins at **4,092 MDR per day** and reduces every four years through halvings until stabilizing at **1 MDR per day** indefinitely. *(Emission values follow binary division, aligning with 2ⁿ reductions.)*
+3. **Daily Emission:** Begins at **4092 MDR per day** and reduces every four years through halvings until stabilizing at **1 MDR per day** indefinitely. *(Emission values follow binary division, aligning with 2ⁿ reductions.)*
     
 4. **Dual Access Model:**
     
@@ -440,7 +440,7 @@ This design avoids regulatory pitfalls like AML concerns while keeping Modulr si
         
 2. **Payout File**:
     
-    - All consumed MTR is recorded in a **payout file**, generated every **4 hours**.
+    - All consumed MTR is recorded in a **payout file**, which is paid out every **4 hours**.
         
 3. **Conversion**:
     
@@ -449,7 +449,7 @@ This design avoids regulatory pitfalls like AML concerns while keeping Modulr si
         
 4. **Fiat Option (Optional)**:
     
-    - Partners who prefer fiat can opt in to monthly payouts, subject to a $100 minimum.
+    - Partners who prefer fiat can opt in to monthly payouts which is subject to a $100 minimum prior to payout.
     - This service is slower and costlier, but enables institutions or regulated entities to participate without handling crypto directly.
         
 
@@ -465,8 +465,8 @@ This design avoids regulatory pitfalls like AML concerns while keeping Modulr si
 
 ## Token Guidelines
 
-- **Decimal Precision:** All tokens are divisible up to **12 decimal places** for precision, using metric prefixes (e.g., milli, micro, nano). For instance, **100µ MDR** represents **0.0001 MDR**.
-- **Cross-Chain Token Sharing:** MDR is distributed across co-chains based on transaction volume, ensuring equitable rewards for contributors.
+- **Decimal Precision:** All tokens and credits are divisible up to **12 decimal places** for precision, using metric prefixes (e.g., milli, micro, nano). For instance, **100µ MDR** represents **0.0001 MDR**.
+- **Cross-Chain Token Sharing:** MDR is distributed across co-chains based on transaction volume, ensuring equitable rewards for validators.
 - **Burn Address:** A dedicated burn address, reserved as `@Burn`, is built into the protocol to enable irreversible token destruction.
 
 ---
@@ -476,16 +476,17 @@ This design avoids regulatory pitfalls like AML concerns while keeping Modulr si
 Modulr’s fee system reflects its core principles of digital ownership and fairness:
 
 1. **Partner-Set Fees:** Partners can independently set fees for services, with a portion allocated to the Creator. Validators cannot set fees.
-2. **Network Suggested Fee:** Partners can opt for a network-suggested fee based on what the Modulr protocol recommends.
-3. **Auto-Fee System:** Dynamically adjusts fees based on token value and network activity.
-4. **Fee Reduction Voting:** Users and partners can vote to reduce fees temporarily if token values become overinflated.
-5. **No-Fee Model:** Partners and co-chains can opt to charge no fees, though this forfeits emission-based rewards. This supports non-profit initiatives.
+2. **Chain-Set Fee:** This fee is what is set by the co-chain you are utilizing and is simply added to the price that the user sees when they select a service to avoid hidden fees.
+3. **Network Suggested Fee:** Partners can opt for a network-suggested fee based on what the Modulr protocol recommends.
+4. **Auto-Fee System:** Dynamically adjusts fees based on token value and network activity.
+5. **Fee Reduction Voting:** Users and partners can vote to reduce fees temporarily if token values become overinflated.
+6. **No-Fee Model:** Partners and co-chains can opt to charge no fees, though this forfeits emission-based rewards. This supports non-profit initiatives.
 
 ---
 
 ## Digital Assets on Modulr
 
-In the era of decentralized networks, **digital assets** are the backbone of user engagement, creativity, and commerce. Unlike traditional NFTs, which merely record ownership, Modulr’s assets bring enforceable rights, clear usage terms, and choices for creators and users alike. This section provides an overview of the contract types, enforcement mechanisms, and protections that make Modulr’s digital assets uniquely valuable.
+In the era of decentralized networks, **digital assets** are the backbone of user engagement, creativity, and commerce. Unlike traditional NFTs, which merely record ownership, Modulr’s assets are designed to bring enforceable rights, clear usage terms, and choices for creators and users alike. This section provides an overview of the contract types, enforcement mechanisms, and protections that make Modulr’s digital assets uniquely valuable.
 
 #### Predefined Digital Asset Contracts
 
