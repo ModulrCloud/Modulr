@@ -948,7 +948,7 @@ MDR is the backbone token of the Modulr network and the primary reward mechanism
     - This design ensures the circulating supply remains balanced across ecosystems.
     - _(Note: The current v1 contract introduces a controlled bottleneck to maintain stability. A v2 contract is planned to optimize throughput and reduce friction.)_
         
-3. **Daily Emission:** Begins at **4,092 MDR per day** and reduces every four years through halvings until stabilizing at **1 MDR per day** indefinitely. _(Emission values follow binary division, aligning with 2ⁿ reductions.)_
+3. **Daily Emission:** Begins at **4,092 MDR per day** and reduces every four years through halvings until stabilizing at **1 MDR per day** indefinitely. *(Emission values follow binary division, aligning with 2ⁿ reductions.)*
     
 4. **Dual Access Model:**
     
@@ -1064,13 +1064,6 @@ Modulr’s fee system reflects its core principles of digital ownership and fair
 3. **Auto-Fee System:** Dynamically adjusts fees based on token value and network activity.
 4. **Fee Reduction Voting:** Users and partners can vote to reduce fees temporarily if token values become overinflated.
 5. **No-Fee Model:** Partners and co-chains can opt to charge no fees, though this forfeits emission-based rewards. This supports non-profit initiatives.
-
----
-
-### Transaction and Scalability Considerations
-
-1. **Encouraging Collaboration:** Developers are incentivize to use established tokens like USP to minimize market fragmentation.
-2. **Scalable Design:** Token-sharing mechanisms ensure rewards align with chain activity, promoting a sustainable ecosystem.
 
 ---
 
