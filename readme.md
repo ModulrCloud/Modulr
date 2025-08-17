@@ -964,13 +964,13 @@ MDR serves as the primary reward token for validators, following a deflationary 
 
 ---
 
-## Modulr Task Runner (MTR)
+### Modulr Task Runner (MTR)
 
 MTR (Modulr Task Runner) is the closed-loop credit system that powers services across the Modulr ecosystem. Unlike speculative tokens, MTR cannot be traded, redeemed, or withdrawn — it can **only** be used for on-network services such as storage, computation, or access to robotics.
 
 This design avoids regulatory pitfalls like AML concerns while keeping Modulr simple, transparent, and consumer-friendly.
 
-### Key Features
+#### Key Features
 
 1. **Service-Only Utility**
     
@@ -991,7 +991,7 @@ This design avoids regulatory pitfalls like AML concerns while keeping Modulr si
 
 ---
 
-### How MTR Flows Through the System
+#### How MTR Flows Through the System
 
 1. **Consumption**:
     
@@ -1015,7 +1015,7 @@ This design avoids regulatory pitfalls like AML concerns while keeping Modulr si
 
 ---
 
-### Why MTR Matters
+#### Why MTR Matters
 
 - **For Users**: A simple, prepaid credit system that feels natural (like Steam or phone cards) while staying transparent with fiat-equivalent pricing.
 - **For Partners**: Fast payouts in MDR with the option for fiat if needed. True market-driven pricing ensures fair competition without rigid, enforced blockchain fees.
@@ -1023,7 +1023,7 @@ This design avoids regulatory pitfalls like AML concerns while keeping Modulr si
 
 ---
 
-### Token Guidelines
+## Token Guidelines
 
 - **Decimal Precision:** All tokens are divisible up to **12 decimal places** for precision, using metric prefixes (e.g., milli, micro, nano). For instance, **100µ MDR** represents **0.0001 MDR**.
 - **Cross-Chain Token Sharing:** MDR is distributed across co-chains based on transaction volume, ensuring equitable rewards for contributors.
