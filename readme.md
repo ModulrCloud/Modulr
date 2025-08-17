@@ -108,6 +108,7 @@ The Main Chain serves as the foundation of Modulr, coordinating critical protoco
     - **Will Protocol**: Allows users to predefine where their digital assets should go if their account becomes inactive for a user-defined period.
     - **Freeze Protocol**: Locks an account to prevent any transactions if a breach is suspected, activating the Will Protocol if necessary.
     - **Limiter Protocol**: Sets transaction limits or delay timers for assets, minimizing losses during potential account compromise.
+    - **Delay Protocol**: This allows users to place a brief delay on transactions that can be rejected by another by that same address. E.x. Private key is leaked and an attacker is attempting to drain funds, but user has the Modulr app on their phone notices the funds being sent and can block them. *Note: This delay doesn't affect the freeze protocol.*
 8. **Licenses and Contracts**:
     
     - Provides a framework for creating:
