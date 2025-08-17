@@ -933,14 +933,14 @@ _Note: The blockchain experienced a soft launch on April 24, 2024. All token emi
 
 ---
 
-### Modulr Gold Piece (MDR)
+### Modulr Token (MDR)
 
-MDR serves as the primary reward token for validators, following a deflationary model inspired by Bitcoin. It introduces periodic reductions in daily emissions, referred to as **floorings**, to promote long-term sustainability and maintain validator interest without inflating fees.
+MDR serves as the primary reward token for validators, following a deflationary model inspired by Bitcoin. It introduces periodic reductions in daily emissions, referred to as **halvings**, to promote long-term sustainability and maintain validator interest without inflating fees.
 
 #### Key Features
 
 1. **Initial Supply:** 4,000,000 MDR minted at launch for development, advertising, and airdrops.
-2. **Daily Emission:** Begins at **4,000 tokens per day** and reduces every four years through floorings until it stabilizes at **1 token per day** indefinitely.
+2. **Daily Emission:** Begins at **4092 tokens per day** and reduces every four years through halvings until it stabilizes at **1 token per day** indefinitely.
 3. **Subscription Model:** MDR introduces a subscription-based system, enabling users to pay a flat rate for nearly unlimited requests while implementing anti-spam measures to protect the network.
 4. **Infinite Supply Model:** The diminishing emissions ensure gradual token scarcity while maintaining validator incentives.
 
@@ -964,38 +964,14 @@ MDR serves as the primary reward token for validators, following a deflationary 
 
 ---
 
-### Modulr Silver Piece (USP)
 
-USP rewards partners for providing computational, storage, and access services. Unlike MDR, USP’s emission schedule is dynamically adjusted through voting by active partners.
-
-#### Key Features
-
-1. **Initial Supply:** 44,444,444 USP minted at launch.
-2. **Daily Emission:** Begins at **4,444 tokens per day** with periodic adjustments through partner voting.
-3. **Voting Mechanism:** Partners vote every four years to either halve or double the emission rate.
-4. **Eligibility for Voting:** Partners must complete at least one transaction per week and maintain a Reliability score above **444** to participate in the vote.
-
-This dynamic voting mechanism enables decentralized governance and can serve as a testing ground for broader governance features across Modulr.
-
----
-
-### AdCoin
-
-AdCoin is the native token of the Pages co-chain and integrates into other systems, such as Mimic, to facilitate user rewards and microtransactions.
-
-#### Key Features
-
-1. **Initial Supply:** 4 trillion AdCoin minted at launch to ensure accessibility and affordability.
-2. **Utility:** Designed for micro-transactions, rewarding users for interacting with ads or classifying content, and granting access to various co-chain functionalities.
-3. **Onboarding Support:** Distributed through airdrops and tutorials to educate new users on earning and spending AdCoin.
-4. **Burn Mechanism:** During halving events, users can vote to implement a burn mechanism to reduce AdCoin supply.
 
 ---
 
 ### Token Guidelines
 
 - **Decimal Precision:** All tokens are divisible up to **12 decimal places** for precision, using metric prefixes (e.g., milli, micro, nano). For instance, **100µ MDR** represents **0.0001 MDR**.
-- **Cross-Chain Token Sharing:** Tokens like MDR and USP are distributed across co-chains based on transaction volume, ensuring equitable rewards for contributors.
+- **Cross-Chain Token Sharing:** MDR is distributed across co-chains based on transaction volume, ensuring equitable rewards for contributors.
 - **Burn Address:** A dedicated burn address, reserved as `@Burn`, is built into the protocol to enable irreversible token destruction.
 
 ---
@@ -1014,7 +990,7 @@ Modulr’s fee system reflects its core principles of digital ownership and fair
 
 ### Transaction and Scalability Considerations
 
-1. **Encouraging Collaboration:** Developers are incentivized to use established tokens like USP to minimize market fragmentation.
+1. **Encouraging Collaboration:** Developers are incentivize to use established tokens like USP to minimize market fragmentation.
 2. **Scalable Design:** Token-sharing mechanisms ensure rewards align with chain activity, promoting a sustainable ecosystem.
 
 ---
