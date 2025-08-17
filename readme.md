@@ -173,9 +173,11 @@ If you would like to learn more please see [Modulr.Store](cochains/Store.md)
 
 ---
 
-### Code Ledger 
+### Modulr.Code
 
-Code ledger is the heart of software development on Modulr, specifically designed for Pseudo. It combines decentralized collaboration, code verification, interactive education, and monetization into one seamless experience for developers. Code Ledger isn’t just a repository—it’s a **living ecosystem** that rewards innovation, encourages learning, and ensures secure development.
+Modulr.Code (formally Code ledger) is the heart of software development on Modulr, specifically designed for Pseudo. It combines decentralized collaboration, code verification, interactive education, and monetization into one seamless experience for developers. Code Ledger isn’t just a repository—it’s a **living ecosystem** that rewards innovation, encourages learning, and ensures secure development.
+
+If you would like to learn more please see [Modulr.Code](cochains/Code.md)
 
 #### Key Features
 
