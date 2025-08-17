@@ -79,7 +79,7 @@ The Main Chain serves as the foundation of Modulr, coordinating critical protoco
 2. **Token Management**:
     
     - Creates two native tokens:
-        - **UGP (Modulr Gold Piece)**: A connection token enabling interactions with validators.
+        - **MDR**: A connection token enabling interactions with validators.
         - **USP (Modulr Silver Piece)**: A utility token for partners to perform tasks across co-chains.
 	        - This is the token that can be overridden with a require collateral which will be paid out to users in the event that liquidity is removed from the token in a short time frame (Modulr's anti-rug protocol). *When we create AdCoin I will show how this process will work.*
 3. **Alias System (UnaS)**:
@@ -915,7 +915,7 @@ Utility tasks are not required to conclude within a single block and may span mu
 1. **Receipt:** Both the client and partner must submit a receipt of the utility. This receipt, signed by both parties, serves as verification of the transaction. Submissions from both parties are recommended to ensure redundancy.
 2. **Utility Complete:** Validators mark the utility task as complete, recording the completion block and appending the transaction receipt. _Note: Receipts must remain under 128 characters to optimize storage, though they may link to larger off-chain files._
 3. **Payout:** At the Creator’s defined intervals, payouts are processed. Transactions not included in the current payout are appended to the **pay sheet** for inclusion in the next interval. Validators hash the payout data and append it to the block, sharing the hash with interconnected co-chains.
-4. **Subscription Model**: UGP will introduce the subscription style model system. If users choose they can subscribe to Modulr's services for a flat rate which allows near infinite requests. *There is an anti-spam system*
+4. **Subscription Model**: MDR will introduce the subscription style model system. If users choose they can subscribe to Modulr's services for a flat rate which allows near infinite requests. *There is an anti-spam system*
 
 ---
 
@@ -927,36 +927,36 @@ Block timing and related parameters may be adjusted based on real-world data to 
 
 ## Tokenomics
 
-Modulr employs two primary utility tokens on its main chain—**Modulr Gold Piece (UGP)** and **Modulr Silver Piece (USP)**—to incentivize validators and partners. Additionally, **AdCoin**, a token specific to the Pages co-chain, demonstrates how developers can implement custom tokens to override USP for specific functionalities.
+Modulr employs two primary utility tokens on its main chain—**Modulr Gold Piece (MDR)** and **Modulr Silver Piece (USP)**—to incentivize validators and partners. Additionally, **AdCoin**, a token specific to the Pages co-chain, demonstrates how developers can implement custom tokens to override USP for specific functionalities.
 
 _Note: The blockchain experienced a soft launch on April 24, 2024. All token emissions from this date until the network officially launches are effectively burned and will not enter circulation._
 
 ---
 
-### Modulr Gold Piece (UGP)
+### Modulr Gold Piece (MDR)
 
-UGP serves as the primary reward token for validators, following a deflationary model inspired by Bitcoin. It introduces periodic reductions in daily emissions, referred to as **floorings**, to promote long-term sustainability and maintain validator interest without inflating fees.
+MDR serves as the primary reward token for validators, following a deflationary model inspired by Bitcoin. It introduces periodic reductions in daily emissions, referred to as **floorings**, to promote long-term sustainability and maintain validator interest without inflating fees.
 
 #### Key Features
 
-1. **Initial Supply:** 4,444,444 UGP minted at launch for development, advertising, and airdrops.
-2. **Daily Emission:** Begins at **4,444 tokens per day** and reduces every four years through floorings until it stabilizes at **1 token per day** indefinitely.
-3. **Subscription Model:** UGP introduces a subscription-based system, enabling users to pay a flat rate for nearly unlimited requests while implementing anti-spam measures to protect the network.
+1. **Initial Supply:** 4,000,000 MDR minted at launch for development, advertising, and airdrops.
+2. **Daily Emission:** Begins at **4,000 tokens per day** and reduces every four years through floorings until it stabilizes at **1 token per day** indefinitely.
+3. **Subscription Model:** MDR introduces a subscription-based system, enabling users to pay a flat rate for nearly unlimited requests while implementing anti-spam measures to protect the network.
 4. **Infinite Supply Model:** The diminishing emissions ensure gradual token scarcity while maintaining validator incentives.
 
 #### **Flooring Schedule**
 
 |Flooring|Year|Tokens Per Day|
 |---|---|---|
-|1|1|4,444|
-|2|4|2,222|
-|3|8|1,111|
-|4|12|555|
-|5|16|277|
-|6|20|138|
-|7|24|69|
-|8|28|34|
-|9|32|17|
+|1|1|4,000|
+|2|4|2,000|
+|3|8|1,000|
+|4|12|500|
+|5|16|250|
+|6|20|125|
+|7|24|63|
+|8|28|32|
+|9|32|16|
 |10|36|8|
 |11|40|4|
 |12|44|2|
@@ -966,7 +966,7 @@ UGP serves as the primary reward token for validators, following a deflationary 
 
 ### Modulr Silver Piece (USP)
 
-USP rewards partners for providing computational, storage, and access services. Unlike UGP, USP’s emission schedule is dynamically adjusted through voting by active partners.
+USP rewards partners for providing computational, storage, and access services. Unlike MDR, USP’s emission schedule is dynamically adjusted through voting by active partners.
 
 #### Key Features
 
@@ -994,8 +994,8 @@ AdCoin is the native token of the Pages co-chain and integrates into other syste
 
 ### Token Guidelines
 
-- **Decimal Precision:** All tokens are divisible up to **12 decimal places** for precision, using metric prefixes (e.g., milli, micro, nano). For instance, **100µ UGP** represents **0.0001 UGP**.
-- **Cross-Chain Token Sharing:** Tokens like UGP and USP are distributed across co-chains based on transaction volume, ensuring equitable rewards for contributors.
+- **Decimal Precision:** All tokens are divisible up to **12 decimal places** for precision, using metric prefixes (e.g., milli, micro, nano). For instance, **100µ MDR** represents **0.0001 MDR**.
+- **Cross-Chain Token Sharing:** Tokens like MDR and USP are distributed across co-chains based on transaction volume, ensuring equitable rewards for contributors.
 - **Burn Address:** A dedicated burn address, reserved as `@Burn`, is built into the protocol to enable irreversible token destruction.
 
 ---
