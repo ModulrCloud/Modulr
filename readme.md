@@ -964,7 +964,62 @@ MDR serves as the primary reward token for validators, following a deflationary 
 
 ---
 
+## Modulr Task Runner (MTR)
 
+MTR (Modulr Task Runner) is the closed-loop credit system that powers services across the Modulr ecosystem. Unlike speculative tokens, MTR cannot be traded, redeemed, or withdrawn — it can **only** be used for on-network services such as storage, computation, or access to robotics.
+
+This design avoids regulatory pitfalls like AML concerns while keeping Modulr simple, transparent, and consumer-friendly.
+
+### Key Features
+
+1. **Service-Only Utility**
+    
+    - MTR credits cannot be redeemed for cash or transferred outside the network.
+    - Prevents speculation and ensures compliance with financial regulations.
+        
+2. **Familiar Access**
+    
+    - Acquired via prepaid cards, digital vouchers, fiat payments, or crypto via MDR or eMDR (Ethereum wrapped MDR).
+    - Users who pay with MDR or eMDR receive **bonus allocations** of MTR.
+    - Services are priced transparently in the user’s native currency, so costs always feel real-world grounded.
+        
+3. **Fair Market Pricing for Partners**
+    
+    - Partners set their own service costs either per GB, per CPU cycle, per hour of service (such as robotics access).
+    - If prices are too high, users can choose competitors, creating a true digital economy.
+        
+
+---
+
+### How MTR Flows Through the System
+
+1. **Consumption**:
+    
+    - A user spends MTR to request a service (e.g., robotics access at $10/hour).
+    - Their credits are deducted immediately on the network.
+        
+2. **Payout File**:
+    
+    - All consumed MTR is recorded in a **payout file**, generated every **4 hours**.
+        
+3. **Conversion**:
+    
+    - At payout, MTR is automatically converted into MDR by purchasing MDR at the current market rate.
+    - The MDR is then sent directly to the partner, providing fast, liquid payments.
+        
+4. **Fiat Option (Optional)**:
+    
+    - Partners who prefer fiat can opt in to monthly payouts, subject to a $100 minimum.
+    - This service is slower and costlier, but enables institutions or regulated entities to participate without handling crypto directly.
+        
+
+---
+
+### Why MTR Matters
+
+- **For Users**: A simple, prepaid credit system that feels natural (like Steam or phone cards) while staying transparent with fiat-equivalent pricing.
+- **For Partners**: Fast payouts in MDR with the option for fiat if needed. True market-driven pricing ensures fair competition without rigid, enforced blockchain fees.
+- **For Regulators**: A closed-loop system that avoids redemption or speculation, framing Modulr as a **service-first platform**, not a financial product.
 
 ---
 
