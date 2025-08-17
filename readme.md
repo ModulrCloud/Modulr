@@ -944,17 +944,17 @@ MDR serves as the primary reward token for validators, following a deflationary 
 3. **Subscription Model:** MDR introduces a subscription-based system, enabling users to pay a flat rate for nearly unlimited requests while implementing anti-spam measures to protect the network.
 4. **Infinite Supply Model:** The diminishing emissions ensure gradual token scarcity while maintaining validator incentives.
 
-#### **Flooring Schedule**
+#### **Halving Schedule**
 
 |Flooring|Year|Tokens Per Day|
 |---|---|---|
-|1|1|4,000|
-|2|4|2,000|
-|3|8|1,000|
-|4|12|500|
-|5|16|250|
-|6|20|125|
-|7|24|63|
+|1|1|4,096|
+|2|4|2,048|
+|3|8|1,024|
+|4|12|512|
+|5|16|256|
+|6|20|128|
+|7|24|64|
 |8|28|32|
 |9|32|16|
 |10|36|8|
