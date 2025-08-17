@@ -147,9 +147,11 @@ If you would like to learn more please see [Modulr.AI](cochains/AI.md)
 
 ---
 
-### Pages (Decentralized Web Platform)
+### Modulr.Web
 
-**Pages** is Modulr’s decentralized Web4 system, offering a modern alternative to traditional web technologies. Replacing HTML and CSS with **M3L** (Multi-Media Markup Language) and **GSS** (Global Style Sheets), Pages provides a scalable, efficient, and privacy-centric experience for both creators and users. 
+Modulr.Web (formally Pages) is Modulr’s decentralized Web system, offering a modern alternative to traditional web technologies. Replacing HTML and CSS with **M3L** (Multi-Media Markup Language) and **GSS** (Global Style Sheets), Modulr>Web provides a scalable, efficient, and privacy-centric experience for both creators and users.
+
+If you would like to learn more please see [Modulr.Web](cochains/Web.md)
 
 **Legacy Domain Protection**
 
