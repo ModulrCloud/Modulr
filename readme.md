@@ -26,41 +26,40 @@ Modulr is a PoU (Proof of Utility) blockchain; that can best be thought of as a 
 
 # Co-Chains
 
-Co-Chains is how the network expands it's abilities and services. Anyone can create and own a co-chain, in fact there is a classification of user called **Creators** mentioned later. The goal of a co-chain is to expand the functionality of the network and not to make new coins, as such it is up to the Creator if they wish to create a new token or use the blockchain's native utility token (USP). The Creator can still set their fees even with the native chains token just as they can with their own. The difference is you cannot control the emission rate nor the quantity. The goal in doing this is to reduce the amount of tokens that go in circulation. It also simplifies the usability of the blockchain the less swaps that need to be performed at the action house. 
+Co-Chains is how the network expands it's abilities and services. Anyone can create and own a co-chain, in fact there is a classification of user called **Creators** mentioned later. The Creator can set their fees thus earning based off the code they have written. Modulr natively does NOT allow the creation of tokens, but co-chains could add that functionality. The goal in doing this is to reduce the amount of tokens that go in circulation.
+
+All of the base co-chains will start with `Modulr.` as that is our organization name on Modulr. This system not only brands our product but it also allow users to easily know who the owner is of this particular chain. This is encouraged for other developers, but not required as you can name your co-chain what you please.
 
 ## Why Co-Chains?
 
-The purpose of utilizing co-chains rather than having traditional layer 2 blockchains are multifaceted:
+There are multiple reasons we call them co-chains rather than layer 2s:
 
-1. It allows for better security since at each block completion a co-chain blends it's hash with a co-chain it's linked to, this reduces the risk of a attack on the network.
+1. Co-chains allows for better security since at each block completion a co-chain blends it's hash with a co-chain it's linked to, this reduces the risk of a attack on the network.
 
-2. It expands Pseudo (Modulr's Pythonic programing language), by allowing others to import functions from other chains. You can choose to private a function or set fees on it. Remember you own it...
+2. It expands Pseudo (Modulr's Pythonic programming language), by allowing others to import functions (services) from other chains. You can choose to private a function or set fees on it. Remember you own it...
 
-3. It provides a sense of ownership for your work and allows you to monetize on it so you can continue to make it better and help you with your personal goals. You can also transfer ownership of a co-chain to another user on the network.  
+3. It provides a sense of ownership for your work and allows you to monetize on it so you can continue to make it better and help you with your personal goals. You can also transfer ownership of a co-chain to another user or organization on the network.  
 
-4. Personally it's better than saying layer two; you're a creator on this network and providing value, you should be recognized for it. Even the main chain is a co-chain. *Note: There will be some verbiage changes in here that I believe are more accurate and beneficial to the industry.*
+4. Personally it's better than saying layer 2; you're a creator on this network and providing value, you should be recognized for it.
 
 ## Understanding Co-Chains: Building Blocks of Modulr
 
-Co-chains are specialized blockchain applications built on Modulr’s decentralized protocol. They enable developers to create targeted solutions, each tailored to specific use cases, while still integrating seamlessly with the broader ecosystem. To illustrate their potential, I’ve designed several foundational co-chains. These not only add value to the network but also serve as practical examples for developers aiming to build on Modulr.
+Co-chains are specialized blockchain applications built on Modulr’s decentralized protocol. They enable developers to create targeted solutions, each tailored to specific use cases, while still integrating seamlessly with the broader ecosystem. To illustrate their potential, I am designing several foundational co-chains. These not only add value to the network but also serve as practical examples for developers aiming to build on Modulr.
 
 ### Why I’m Building These Co-Chains
 
 As the creator of Modulr, my goal is to demonstrate how co-chains can unlock innovative solutions. By developing these foundational co-chains, I aim to:
 
 1. **Showcase Efficient Data Management:**  
-    Demonstrate how to use storage, computation and access, to interact with the network in a secure and efficient manner.
+    Demonstrate how to use storage, computation and access, to interact with the network in a secure and efficient.
     
-2. **Promote Token Standardization:**  
-    Provide examples of token creation while encouraging developers to use existing tokens like USP to reduce market fragmentation and maintain interoperability.
+2. **Highlight Co-Chain Collaboration:**  
+    Illustrate how co-chains can integrate and expand upon one another to create complex, interdependent systems (e.g., using Modulr.Web with Modulr.Social to integrate streaming video).
     
-3. **Highlight Co-Chain Collaboration:**  
-    Illustrate how co-chains can integrate and expand upon one another to create complex, interdependent systems (e.g., using Live with Smack or Player2).
-    
-4. **Inspire Developer Creativity:**  
+3. **Inspire Developer Creativity:**  
     Present co-chains that provide tangible value to users, showcasing how developers can design systems that drive engagement, adoption, and utility.
     
-5. **Encourage Best Practices:**  
+4. **Encourage Best Practices:**  
     Serve as a blueprint for building secure, scalable, and sustainable blockchain applications that align with user needs and network goals.
     
 
@@ -68,20 +67,19 @@ As the creator of Modulr, my goal is to demonstrate how co-chains can unlock inn
 
 These co-chains are not just standalone solutions; they are stepping stones for developers. By integrating and iterating on the concepts presented, developers can reduce duplication, enhance functionality, and focus on creating new value for the ecosystem. Whether it’s a decentralized streaming platform, a social media protocol, or a robust marketplace, the possibilities are endless when co-chains work together.
 
-### Main Chain
+### Modulr.Core
 
-The Main Chain serves as the foundation of Modulr, coordinating critical protocols, utilities, and governance across the network. Its responsibilities include:
+Modulr.Core serves as the foundation of Modulr, coordinating critical protocols, utilities, and governance across the network. Its responsibilities include:
 
 1. **Messaging and Communication**:
     
-    - Establishes base peer to peer messaging protocols to facilitate interaction between user types (validators, partners, and clients).
+    - Establishes a base peer to peer messaging protocols to facilitate communication between all user types (validators, partners, creators and clients).
     - Introduces an **emergency messaging system** that allows Creators to broadcast critical updates and alert messages to all users on the network.
 2. **Token Management**:
     
-    - Creates two native tokens:
-        - **MDR**: A connection token enabling interactions with validators.
-        - **USP (Modulr Silver Piece)**: A utility token for partners to perform tasks across co-chains.
-	        - This is the token that can be overridden with a require collateral which will be paid out to users in the event that liquidity is removed from the token in a short time frame (Modulr's anti-rug protocol). *When we create AdCoin I will show how this process will work.*
+    - Establishes token and credit systems:
+        - **MDR**: A tadable asset across the network and used to incentivize validators and users alike.
+        - **MTR (Modulr Task Runner)**: A credit system that is used to perform services on the network and allows partners to decide how the value of the service they are providing.
 3. **Alias System (UnaS)**:
     
     - Provides users with customizable usernames (e.g., `@username`) for simplified transactions and easier identification.
@@ -119,7 +117,7 @@ The Main Chain serves as the foundation of Modulr, coordinating critical protoco
     - Implements a subscription system, enabling users to pay recurring fees for co-chain services with predefined expiration dates.
 10. **Redemption System**:
     
-    - Allows users to generate unique codes that others can redeem for assets, similar to prepaid or gift cards.
+    - Allows users to generate unique codes that others can redeem for assets, similar to prepaid or gift cards. Which is how MTR will be claimed. 
 11. **Reliability Score**:
     
     - Tracks and evaluates user behavior to identify trustworthy participants and mitigate bad actors.
@@ -133,14 +131,19 @@ The Main Chain serves as the foundation of Modulr, coordinating critical protoco
 14. **Block Time and Synchronization**:
     
     - Establishes and maintains consistent block time across the network to ensure synchronization.
-15. **Address book other co-chains:**
+15. **Directory for all co-chains:**
 
 	- Stores the validator addresses (contact information) for other co-chains so that if a user doesn't have that information stored in their system, they can request it.
 
 ---
-### Mimic
 
-Mimic is Modulr’s dedicated AI co-chain, designed to revolutionize how artificial intelligence is deployed and used across decentralized networks. The Mimic co-chain focuses on creating **specialized AI models** tailored for specific tasks, ensuring efficiency, modularity, and adaptability. These models are connected to a **hypervisor system**, which intelligently routes incoming requests to the appropriate AI for seamless performance.
+> The following co-chains listed will simply have a summary as the scope of this document is to provide an idea of the capabilities of the core system. Each co-chain has it's own whitepaper which will be linked at the bottom if you wish to learn more. 
+
+### Modulr.AI
+
+Modulr.AI (formally Mimic) is Modulr’s dedicated AI co-chain, designed to revolutionize how artificial intelligence is deployed and used across decentralized networks. The Mimic co-chain focuses on creating **specialized AI models** tailored for specific tasks, ensuring efficiency, modularity, and adaptability. These models are connected to a **hypervisor system**, which intelligently routes incoming requests to the appropriate AI for seamless performance. Most important its used all throughout Modulr as a system for assisting user interaction as well as moderation. 
+
+If you would like to learn more please see (Modulr.AI)[modulr_AI_Whitepaper.md]
 
 **Key Features:**
 
