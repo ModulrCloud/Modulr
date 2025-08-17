@@ -143,7 +143,7 @@ Modulr.Core serves as the foundation of Modulr, coordinating critical protocols,
 
 Modulr.AI (formally Mimic) is Modulr’s dedicated AI co-chain, designed to revolutionize how artificial intelligence is deployed and used across decentralized networks. The Mimic co-chain focuses on creating **specialized AI models** tailored for specific tasks, ensuring efficiency, modularity, and adaptability. These models are connected to a **hypervisor system**, which intelligently routes incoming requests to the appropriate AI for seamless performance. Most important its used all throughout Modulr as a system for assisting user interaction as well as moderation. 
 
-If you would like to learn more please see [Modulr.AI](modulr_AI_Whitepaper.md)
+If you would like to learn more please see [Modulr.AI](cochains/AI.md)
 
 ---
 
