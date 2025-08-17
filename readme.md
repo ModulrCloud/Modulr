@@ -75,11 +75,11 @@ Modulr.Core serves as the foundation of Modulr, coordinating critical protocols,
     
     - Establishes a base peer to peer messaging protocols to facilitate communication between all user types (validators, partners, creators and clients).
     - Introduces an **emergency messaging system** that allows Creators to broadcast critical updates and alert messages to all users on the network.
-2. **Token Management**:
+2. **Asset Management**:
     
-    - Establishes token and credit systems:
-        - **MDR**: A tadable asset across the network and used to incentivize validators and users alike.
-        - **MTR (Modulr Task Runner)**: A credit system that is used to perform services on the network and allows partners to decide how the value of the service they are providing.
+    - Establishes token and credit system:
+        - **MDR**: A tradable asset across the network and used to incentivize validators and users alike.
+        - **MTR (Modulr Task Runner)**: A credit system that is used to perform services on the network and allows partners to decide how the value of the service they are providing. MTR Cannot be traded it must be used for services on the network.
 3. **Alias System (UnaS)**:
     
     - Provides users with customizable usernames (e.g., `@username`) for simplified transactions and easier identification.
@@ -217,7 +217,7 @@ Through firsthand experience in building these systems, I’ve learned that acti
 To spark inspiration for future development, here are a few ideas for co-chains that I believe could thrive on Modulr:
 
 1. **Decentralized Rideshare and Delivery Services**  
-    Imagine a decentralized version of Uber or DoorDash, enabling peer-to-peer ridesharing and delivery services without centralized control. Such a system could bring fairer pricing, more equitable profit distribution, and enhanced user control.
+    Imagine a decentralized version of Uber or DoorDash, enabling peer-to-peer ride sharing and delivery services without centralized control. Such a system could bring fairer pricing, more equitable profit distribution, and enhanced user control.
     
 2. **Decentralized Marketplace**  
     A decentralized Amazon-like co-chain could link small, independent shops into a unified network. This would empower local businesses to compete with larger corporations while offering consumers diverse options from around the world.
@@ -256,27 +256,29 @@ To spark inspiration for future development, here are a few ideas for co-chains 
 	This co-chain enables creators and platforms to host music and video content in a decentralized ecosystem. By integrating features from **Live**, it facilitates seamless content streaming with robust scalability and low latency. The use of **rental digital asset contracts** allows content providers to define specific usage rights, such as viewing-only or limited-time access, ensuring creators maintain control over their work while providing users with a seamless experience.
 
 	This co-chain paves the way for decentralized streaming platforms—think of it as a blockchain-powered alternative to services like Netflix or Spotify—where content ownership, control, and monetization are shifted back to the creators and their audiences. Additionally, creators can use the built-in functionality of Pages to host their libraries and leverage AdCoin for monetization options.
-## Open vs. Closed Source
+
+## Co-Chain choice (Open vs. Closed Source)
 
 While I firmly believe in the principles of open-source development, Modulr also provides the flexibility to run closed-source code. This capability is achieved through **Preferred Partners**, systems that execute Creator code directly without requiring compilation by the Code Ledger co-chain. However, implementing closed-source systems introduces challenges, particularly regarding security and transparency, as public scrutiny of the code is limited.
 
 This approach may seem to contrast with the ideals of decentralization, but Modulr is designed to go beyond rigid definitions. By blending the strengths of both decentralized and centralized systems, Modulr ensures developers have the freedom to use the tools that best meet the unique requirements of their applications. Whether it’s full transparency through open-source projects or the tailored control of closed-source solutions, Modulr is built for the future—empowering developers to innovate without compromise.
 
 ---
+
 # User Types in Modulr
 
 Modulr features four distinct user types, each designed to balance power and ensure no single entity can compromise the integrity of the chain. Here's how they function:
 
 1. **Creators**  
     Creators are the architects of a co-chain. They define its functionality, tokenomics (fees), and governance rules. Upon launching a chain, owners receive a digital asset certifying their ownership, which can be transferred or shared with up to two additional partners. Owners also select **preferred validators** (often themselves) and determine the number of validators on their network, with a minimum of three.  
-    _Concerns about centralization? Don't worry; safeguards are in place._
+    *Concerns about centralization? Don't worry; safeguards are in place.*
     
 2. **Validators**  
     Validators act as the backbone of the network, akin to routers. Their responsibilities include:
     
     - Connecting clients with partners to fulfill requests.
     - Validating and recording transactions, ensuring data integrity.
-    - Maintaining the **Users File**, a secure directory mapping usernames to public keys.  
+    - Maintaining the **Username Database**, a secure directory mapping usernames to public keys.  
         Validators play a crucial role in keeping the network functional, secure, and efficient.
 3. **Partners**  
     Partners are Modulr’s equivalent of miners, but instead of solving cryptographic puzzles, they perform meaningful tasks in three utility categories: computation, storage, and access.
@@ -296,7 +298,7 @@ Modulr features four distinct user types, each designed to balance power and ens
 
 Blocks on Modulr are generated using a fixed block time rather than size to ensure consistent and predictable operation. This design choice mitigates the risk of rapid chain expansion by offloading completed items such as job files, work files, and payout lists to partners for storage. Additionally, a process called **The Convergence** consolidates the chain to optimize storage and performance; this is explained further in the encryption standards section. Each block is generated in three distinct stages, with each stage consisting of three steps.
 
-The timing of block generation will initially be experimental. Blocks need to be long enough to accommodate a sufficient number of job requests while maintaining responsiveness for users. The current target is **44 seconds per block**. While blocks finalize at this interval, transaction propagation is near-instantaneous, providing users with a fast and seamless experience.
+The timing of block generation will initially be experimental. Blocks need to be long enough to accommodate a sufficient number of job requests while maintaining responsiveness for users. The current target is **60 seconds per block**. While blocks finalize at this interval, transaction propagation is near-instantaneous, providing users with a fast and seamless experience.
 
 ### **Transaction Throughput and Responsiveness**
 
@@ -341,9 +343,9 @@ Block timing and related parameters may be adjusted based on real-world data to 
 
 ## Tokenomics
 
-Modulr employs two primary utility tokens on its main chain—**Modulr Gold Piece (MDR)** and **Modulr Silver Piece (USP)**—to incentivize validators and partners. Additionally, **AdCoin**, a token specific to the Pages co-chain, demonstrates how developers can implement custom tokens to override USP for specific functionalities.
+Modulr employs **MDR** to incentivize validators and partners. Partners do not directly earn MDR from the network however, that is only done via the validators. Rather the partners set their price for services on the network and that fee for the service is paid to the partner. This fee system is done via the **MTR** credit system which is an asset that can only be used for services on the network. More on this later.
 
-_Note: The blockchain experienced a soft launch on April 24, 2024. All token emissions from this date until the network officially launches are effectively burned and will not enter circulation._
+*Note: The blockchain experienced a soft launch on April 24, 2024. All token emissions from this date until the network officially launches are effectively burned and will not enter circulation.*
 
 ---
 
