@@ -935,20 +935,36 @@ _Note: The blockchain experienced a soft launch on April 24, 2024. All token emi
 
 ### Modulr Token (MDR)
 
-MDR serves as the primary reward token for validators, following a deflationary model inspired by Bitcoin. It introduces periodic reductions in daily emissions, referred to as **halvings**, to promote long-term sustainability and maintain validator interest without inflating fees.
+MDR is the backbone token of the Modulr network and the primary reward mechanism for validators. It follows a deflationary model inspired by Bitcoin, introducing scheduled reductions in daily emissions — referred to as **halvings** — to promote long-term sustainability while ensuring validator incentives remain intact.
 
 #### Key Features
 
-1. **Initial Supply:** 4,000,000 MDR minted at launch for development, advertising, and airdrops.
-2. **Daily Emission:** Begins at **4092 tokens per day** and reduces every four years through halvings until it stabilizes at **1 token per day** indefinitely.
-3. **Subscription Model:** MDR introduces a subscription-based system, enabling users to pay a flat rate for nearly unlimited requests while implementing anti-spam measures to protect the network.
-4. **Infinite Supply Model:** The diminishing emissions ensure gradual token scarcity while maintaining validator incentives.
+1. **Initial Allocation:** 4,000,000 MDR minted at launch. Of this supply, **1,000,000 MDR exists on Ethereum as eMDR**, while **3,000,000 MDR remains on the native Modulr chain**.
+    
+2. **Cross-Chain Bridge:** MDR will be transferred between the Modulr chain and Ethereum through a **slot-based bridge mechanism**:
+    
+    - When a user sends MDR from Modulr to Ethereum, it is locked into a **slot** on the Modulr side, and an equivalent amount of eMDR is released from a bridge wallet on Ethereum.
+    - When a user sends eMDR back to Modulr, it is locked on Ethereum, which **opens a slot** on Modulr and releases the native MDR.
+    - This design ensures the circulating supply remains balanced across ecosystems.
+    - _(Note: The current v1 contract introduces a controlled bottleneck to maintain stability. A v2 contract is planned to optimize throughput and reduce friction.)_
+        
+3. **Daily Emission:** Begins at **4,092 MDR per day** and reduces every four years through halvings until stabilizing at **1 MDR per day** indefinitely. _(Emission values follow binary division, aligning with 2ⁿ reductions.)_
+    
+4. **Dual Access Model:**
+    
+    - **Subscription:** Users can pay MDR to unlock flat-rate access with capped transactions per minute.
+    - **PAYG (Pay-as-you-go):** Users can pay per transaction, consuming MDR as needed.
+        
+5. **Perpetual Incentive Model:** By never reducing emissions to zero, Modulr ensures validator rewards persist indefinitely, while scarcity still increases over time.
+    
 
-#### **Halving Schedule**
+---
 
-|Flooring|Year|Tokens Per Day|
+#### Halving Schedule
+
+|Halving|Year|Tokens Per Day|
 |---|---|---|
-|1|1|4,096|
+|1|1|4,092|
 |2|4|2,048|
 |3|8|1,024|
 |4|12|512|
@@ -961,6 +977,14 @@ MDR serves as the primary reward token for validators, following a deflationary 
 |11|40|4|
 |12|44|2|
 |13+|48+|1|
+
+---
+
+#### Why MDR is Different
+
+Unlike traditional cryptocurrencies that force every user into volatile per-transaction fees, MDR introduces a **subscription + PAYG hybrid model**. This gives users the freedom to choose a plan that fits their needs, while giving Modulr a sustainable revenue stream that mirrors familiar Web2 services.
+
+Additionally, MDR’s **slot-based bridge system** ensures that liquidity between Ethereum and Modulr remains tightly controlled, reducing risks of oversupply, arbitrage abuse, or bridge exploits. This approach creates a unique blend of **cross-chain flexibility with supply discipline**, paving the way for safe interoperability.
 
 ---
 
