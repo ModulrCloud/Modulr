@@ -911,7 +911,7 @@ For end users, these changes are invisible. They simply experience reliable perf
 
 While Modulr’s sub-domain system is designed for today’s global scale, its architecture also lends itself to future planetary-scale deployments, ensuring that wherever humanity goes, their data can follow.
 
-#### Convergence
+### Convergence
 
 I believe that this blockchain is going to get large fast even with some of the space constraints that I am already planning on implementing. So what I am planning on implementing is a by product of the fact that we have decentralized storage on chain. What I am planning is that at least every flooring we implement The Convergence which is a process where we store all of the blockchains information on file and effectively restart the blockchain using the hash of the old chain as a genesis block. This would effectively lower the barrier in regards to how much RAM a validator needs since they can offload it onto the partners to store. The convergence will also occur when we have a cryptography swap (example switching to Kyber).
 
@@ -1023,137 +1023,25 @@ While having a separation of power between the validators who maintain the block
 
 Had a thought while doing some development work in regards to having hot and cold wallets, and since Modulr needs the ability to sign transactions (fairly regularly) I think it may be wise to implement the idea of hot and cold wallets so that users already have that as a additional means of security. What this would mean is that instead of just one public address in a user accounts name you would have two. I need to think more on this and how it should be implemented. I will say for sure that fees between those two wallets will be zero.
 
-# Code Bounties
+### Code Bounties
 
-In this section I am going to list out the active *bounties* for the Modulr project. The Bounty program is meant to not only list what is needed for chain development, but also provide reward structures for each *contract* that is listed. 
+To ensure Modulr remains a living, evolving ecosystem, a portion of the network’s resources are dedicated to **developer incentives**. Modulr has seeded a **Developer Fund of 1 million MDR** to reward contributions that strengthen the protocol, expand co-chains, and improve the ecosystem.
 
-One of the ideas I have for Modulr is to make it so that open source software doesn't mean free, which means for everyone not just the project. This not only refers to the organization which can receive tokens, nor the Creator(s) who can collect fees, but also freelance developers who are looking to assist in a project. 
+This program, known as the **Code Bounty System**, allows anyone — from freelancers to organizations — to contribute and be rewarded. Each bounty is structured as a **Contract**, defining:
 
-Modulr itself has a startup developer fund of 1 million GP as well as 10 million SP. Modulr will also use this fund to support new co-chains since new blockchains coming into Modulr help support the eco system and make Modulr better. 
+- The desired outcome (overview of the request).
+- The current status (open, active, or closed).
+- The payout in MDR.
+- The participating developers or organizations.
+- Contribution activity and progress.
+- Timelines and milestones.
 
-Currently there are no active bounties at this time as the system is still under development, but I am going to make some examples of what a warrant should look like. *Note: this is currently being posted in GitHub, but will eventually only exist on Modulr once the Code Ledger side chain goes live*
+While examples of contracts are published today in GitHub, this system will eventually be housed natively in **Modulr.Code**, where it will be fully integrated with revision control, organizational governance, and automated payout logic.
 
-## Example of Bounties
-
-
-### Example of a Co-Chain Contract
-
-**Wanted**:  Need to develop a co-chain that allows users to lease high end hardware with low latency to a users for use in gaming environments. The name of this chain is **Player2** and the goal is to allow thin clients the ability to stream content and extremely low latency rates (>10ms) via the access protocol. 
-
-**Status** - Open
-
-**Payout**: 10,000GP
-
-**Participants**: @Undline(0)
-
-**Total Contribution**: 0 - Never
-
-**Breadcrumb** - Need to outline the technical specifications as well as how this can work.
-
-**Timeline**: Technical outline due out by August 2025
-
-#### Explanation
-
-While Modulr is the only chain that should be requesting new chains (although anyone can do that). I believe this shows a good example of what a contract should looks like. 
-
-1. **Wanted** - This defines what is being sought after and should be treated as an overview, meaning what the final product should be. *I should probably limit this field to a specific amount of characters to enforce the idea that this should be a brief description.*
-2. **Status** - The current status of the contract. Open means you are looking for candidates, active means that the module is being worked on and is not open for additional candidates at this time (this should only be reserved for large projects that may have too many participants) and closed which means the contract was completed.
-3. **Payout** - As the name suggests, it's the total payout from the contract. This payout will be subdivided across all participants on the team with an emphasis on usage. Meaning how often a contribution is used or referenced. *payout is going to be the trickiest portion of the algorithm to implement since people will always try to game the system to get more.*
-4. **Participant** - This is the account(s) / organization that is currently registered to work on this contact. There is also a listing of how much of the project (in percent) that has been contributed by each individual.
-5. **Total Contribution** - Refers to how many commits have been made to the project along with the last date. This gives any prospective developer an idea on how active a project is.
-6. **Breadcrumb** - This section gives the developer an idea on what is the primary focus at this time. I think this would only be needed for building Co-Chains, but it's possible this may be helpful in smaller projects as well. 
-7. **Timeline** - This states where the project is at in it's development stage as well as target dates. ideally displayed in something like a Gantt chart. 
-
-I believe there will need to be more things that need to be added so this needs to be open for extension...
-
-### Example of a Improvement Contract
-
-**Wanted** - Add documentation to the readme file that describes what a warrant / contract looks like. 
-
-**Status**: Active
-
-**Payout** - 4SP
-
-**Participant** - @Undline(100)
-
-**Total** **Contribution** - @Undline(20) - 2024-06-23
-
-**Breadcrumb** - Describing how the Warrant system works for improvements
-
-**Timeline** - 2024-04-04
-
-#### Explanation
-
-The definitions are the same from before, but this shows two things. First, what it should look like when you have some contribution going on and second, that it doesn't have to be *code* that is being worked on. Ideally anything that can be represented digitally could be used here. In this case we are requesting that better documentation exist.
-
-### Example of a module update
-
-**Wanted** - Need to implement a LRC caching system for faster response times when a client requesting pages that are in high demand.
-
-**Status** - Open
-
-**Payout** - 2GP
-
-**Participant** - None
-
-**Total Contribution** - None
-
-**Breadcrumb** - Start
-
-**Location** - data_strcutures.py
-
-**Timeline** - 2024-07-09
-
-#### Explanation
-
-This is a quick example of what it would look like to have a contract open on a specific module. In this example I added a new category called location. I am not sure if the other contacts would need it so I am going to leave it as `none` in those files.
-
-
-### Example of an Improvement Contract
-
-Wanted - Need to add functionality that allows multiple clients to stream updates to one another over a singular document. The largest challenge will be managing conflicts. Mutex certain portions of the document?
-
-**Status** - Open
-
-**Payout** - 100GP
-
-**Participants** - None
-
-**Total Contributions** - None
-
-**Breadcrumb** - Define project objectives
-
-**Location** - New 
-
-**Timeline** - None
-
-This example is meant to show how you could create a contract that adds functionality to an existing project. 
-
-### Example of a Hardware Contract
-
-**Wanted** - Need to create a wireless device that can use multiple radio frequencies that broadcast Modulr routing protocols that enable fast local communication. 
-
-**Status** - Open
-
-**Payout** - 100,000GP, 40,000SP
-
-**Participants** - None
-
-**Total Contributions** - None
-
-**Breadcrumb** - Define operating parameters to stay compliant with local laws. Use LoRA and WiFi as a starting point?
-
-**Location** - Altera 
-
-**Timeline** - None
-
-Not sure if this will work out well, but I was thinking we could also make real world projects using this same open system. In this case the location could be to use a program (I used Altera as an example since that's where you would make PCBs). 
-
-### Conclusions
-
-This should all be housed inside programs that have a form of revision control so that you can maintain and control projects. Ideally you would have an *organization* (in Modulr) responsible for creating these projects that way you can define roles and positions that you need. *Tip: never skip out on Documentation or Quality Control as it is critical for any successful project...*
+> **Note:** Detailed examples of contract structures, templates, and payout mechanisms are provided in the Modulr.Code whitepaper.
 
 ---
+
 # Technical Documentation / Roadmap
 
 
