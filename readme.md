@@ -882,11 +882,34 @@ In order to make building the Reliability score more transparent we are introduc
 
 ### Scaling and Security
 
-Modulr should move very quickly since we use so few validators in order to issue work on the chain, however there is a problem with network delay due to physical size so the use of parallel networks is to be used. The idea is that a parallel network operates in the same manner as each other with the exception being their user base. The user declares which network they wish to be apart of and with that they are provided a list of the validators that are responsible in that region to interact with. This doesn't mean that you are stuck on that network permanently though. You can initiate a transfer at anytime and your assets will travel with you. Again the reason for the parallel networks is to increase QoS by making content more local to that specific space, this includes the ledger. Much like how tokens are dispersed across co-chains they are also dispersed the same way with networks. Token allotment is decided by network 1 and is based on activity. 
+Modulr is designed to scale aggressively without sacrificing speed or security. Because the protocol uses a limited number of validators to issue and verify work, transaction throughput remains high. However, network latency can become a factor as the ecosystem grows and spans larger geographic regions.
 
-##### How do you create a new network? You don't :) 
+To address this, Modulr employs **parallel networks** (also called *sub-domains*). Each sub-domain operates identically to the others, with the only difference being its user base and validator pool. By localizing activity, these networks reduce delay and improve **quality of service (QoS)** while remaining synchronized with the global ledger.
 
-I still haven't decided just how I am going to do this, but I believe it will most likely be a mixture of algorithmic as well as Creator responsibility. Perhaps I could leave it to a vote?
+- **User Routing:** When a user connects, they are automatically routed to the sub-domain that offers the best latency and performance for their region.
+- **Mobility:** Users are not locked to a single sub-domain. If they travel or relocate, their assets and state seamlessly follow them. Behind the scenes, the global ledger ensures balances remain consistent, while the new sub-domain preloads their state to restore QoS quickly. *Advanced users will be able to manually migrate on their own, but this should NOT be the normal operation for the network*
+- **QoS Optimization:** New sub-domains are created algorithmically when latency, validator load, or user activity passes defined thresholds. Likewise, underutilized sub-domains may be automatically **dissolved**, with their users and data redistributed across healthier domains.
+
+#### Data Migration and Storage
+
+When a user transitions between sub-domains, their **data follows them**. To ensure low-latency access:
+- Frequently accessed files are prioritized and migrated first, while rarely used files move later in the process.
+- Users with large data sets may experience slightly longer migration times, but access to critical data is maintained throughout.
+- Data is never confined to a single location: Modulr’s storage algorithm ensures multiple redundant copies exist across different regions, protecting against data loss from local outages or disasters.
+
+This approach not only provides fast access but also guarantees durability. Even if a region goes offline, user data remains available globally with only a minor increase in retrieval latency.
+
+#### Organizational Considerations
+
+Organizations that span multiple regions may require synchronized copies across several sub-domains to ensure members always have the most up-to-date information. Depending on activity, this synchronization can prioritize the sub-domain with the largest active user base, while still maintaining redundancy across others.
+
+#### Audit Trail and Validator Awareness
+
+The lifecycle of sub-domains is **logged on-chain**. When a sub-domain is created, merged, or dissolved, the event is recorded in the network log. Validators are automatically notified when user loads shift, ensuring they can adjust capacity to meet demand.
+
+For end users, these changes are invisible. They simply experience reliable performance and seamless continuity, without needing to understand or act on the underlying mechanics.
+
+While Modulr’s sub-domain system is designed for today’s global scale, its architecture also lends itself to future planetary-scale deployments, ensuring that wherever humanity goes, their data can follow.
 
 #### Convergence
 
