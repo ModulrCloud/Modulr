@@ -89,3 +89,109 @@ Code Ledger sets a new standard for decentralized software development by:
 #### Final Thoughts
 
 With Code Ledger, Modulr doesn’t just provide a decentralized alternative to platforms like GitHub—it builds an **evolutionary system** that rewards developers, fosters innovation, and ensures secure, scalable development for the future. It’s the ultimate toolkit for building the decentralized applications of tomorrow.
+
+
+---
+
+> This examples I took from the main whitepaper since Code Bounties are really meant for this co-chain more so than the main co-chain
+
+# Appendix A: Example Contracts
+
+The following examples illustrate how contracts within the Code Bounty System are structured. Each contract contains fields that define what is needed, the status of the request, the payout, and the progress made by contributors.
+
+These examples are illustrative only and are meant to guide organizations and developers in authoring new contracts once Modulr.Code is live.
+
+---
+
+## Example: Co-Chain Contract
+
+**Wanted:** Develop a co-chain, **Player2**, that allows users to lease high-end hardware for low-latency gaming environments. The goal is to enable thin clients to stream content at <10ms latency via the Access protocol.
+
+**Status:** Open  
+**Payout:** 10,000 MDR  
+**Participants:** @Undline (0%)  
+**Total Contribution:** 0 — None yet  
+**Breadcrumb:** Outline the technical specifications and architecture.  
+**Timeline:** Technical outline due August 2025
+
+---
+
+## Example: Improvement Contract
+
+**Wanted:** Add documentation to the readme file describing how contracts work in the bounty system.
+
+**Status:** Active  
+**Payout:** 4 MDR  
+**Participants:** @Undline (100%)  
+**Total Contribution:** @Undline — 20 commits (last: 2024-06-23)  
+**Breadcrumb:** Document warrant/contract workflow for improvements.  
+**Timeline:** 2024-04-04
+
+---
+
+## Example: Module Update
+
+**Wanted:** Implement an LRC caching system for faster response times when clients request high-demand pages.
+
+**Status:** Open  
+**Payout:** 2 MDR  
+**Participants:** None  
+**Total Contribution:** None  
+**Breadcrumb:** Initial design  
+**Location:** data_structures.py  
+**Timeline:** 2024-07-09
+
+---
+
+## Example: Feature Addition
+
+**Wanted:** Add functionality allowing multiple clients to stream updates to the same document. The primary challenge is conflict management.
+
+**Status:** Open  
+**Payout:** 100 MDR  
+**Participants:** None  
+**Total Contribution:** None  
+**Breadcrumb:** Define project objectives  
+**Location:** New module  
+**Timeline:** None
+
+---
+
+## Example: Hardware Contract
+
+**Wanted:** Design a wireless device capable of broadcasting Modulr routing protocols over multiple radio frequencies for fast local communication.
+
+**Status:** Open  
+**Payout:** 100,000 MDR  
+**Participants:** None  
+**Total Contribution:** None  
+**Breadcrumb:** Define operating parameters for compliance with local laws. Initial tests with LoRa and Wi-Fi.  
+**Location:** Hardware design (e.g., Altera for PCB design)  
+**Timeline:** None
+
+---
+
+### Notes on Structure
+
+Each contract should contain the following fields:
+
+1. **Wanted:** Overview of the desired outcome.
+    
+2. **Status:** Open (accepting participants), Active (in progress), or Closed (completed).
+    
+3. **Payout:** The bounty in MDR.
+    
+4. **Participants:** Registered accounts/orgs working on the contract.
+    
+5. **Total Contribution:** Commit activity and dates.
+    
+6. **Breadcrumb:** Current focus (specs, testing, implementation).
+    
+7. **Timeline:** Milestones and deadlines.
+    
+8. **Location (optional):** Relevant file, module, or platform for the task.
+    
+
+---
+
+This appendix provides a **concrete starting point** for implementing the Code Bounty System. Organizations can extend or refine these templates as needed, but all contracts should follow this general structure to ensure consistency and transparency.
