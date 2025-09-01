@@ -994,19 +994,19 @@ At this time it is our intent to make the language case insensitive, meaning tha
 
 Ensuring that the network stays decentralized and ensuring that there is no concentration of resources going to one area is a key factor with Modulr. With that in mind the chain will envelop protocols that are designed to keep with those philosophies. One such method is the separation of powers between the different user types. With that in mind this section will discuss how these separation of powers come into play regarding the network.
 
-#### Creators
+### Creators
 
 While Creators do create the rules for the chain, they are bound by the fact that they cannot enforce them as this is a role that is split between Clients, Validators and Partners. It is very possible that a Creator could release an update and if the Validators and partners choose not to run observe it, the new version would simply be skipped. This was done to stop potentially bad code from running on the network and to keep Creators honest in their updates. This doesn't mean they cannot spin up a new chain with this new code, but it does ensure that the community agrees to the terms outlined in those changes. 
 
-#### Validators
+### Validators
 
 Validators are only as authoritative as clients allow them to be, if a group of validators are acting within self interest clients can simply ignore them and drop their Reliability scores and since the network is only interested in staying online it will switch over to validators that have that higher Reliability score. Validators can also be blocked by a Creator through various means (primarily through setting the minimum threshold on the Reliability score), but a Creator could block a particular Creator from participating. Lastly validators are graded based on the connections they make and if partners are not contacting them this lowers their Reliability score (as it does with clients) and they will be taken offline. There is a small exception to this with the use of known validators, but there is a threshold to which even a known validator will lose their spot if the Reliability score drops. 
 
-#### Partners
+### Partners
 
 What use is a partner that is never used? If a partner is not being utilized then they are just burning electricity for no tokens and just like validators partners can loose Reliability score if they are providing no utility. Unlike partners, a Creator cannot remove them from the chain from providing utility (I don't think its necessary). Partners can drop in Reliability if they claim to perform utility and either cannot perform the utility as promised or doesn't do it at all. The validator has the choice to not provide a partner with work *only if* they have a proven track of being unreliable.
 
-#### Clients
+### Clients
 
 It is illegal on Modulr to not process a transaction regardless of how poorly a user acts on chain. If you make a request and you meet the fee then the transaction is performed. So, what Modulr does in cases where a client who has a low Reliability score, is in cases where you are submitting a claim against another user it reduces the likelihood you will win that claim without substantial proof. How do clients have low Reliability scores? Mainly through false claims, but also when they act in either of the other user types. Think that you are a partner who has earned tokens and then you want to use network resources with those tokens, but you provided poor service. As always, you can redeem yourself by acting as a partner or validator. 
 
@@ -1021,9 +1021,107 @@ While having a separation of power between the validators who maintain the block
 
 ## Wallets
 
-Had a thought while doing some development work in regards to having hot and cold wallets, and since Modulr needs the ability to sign transactions (fairly regularly) I think it may be wise to implement the idea of hot and cold wallets so that users already have that as a additional means of security. What this would mean is that instead of just one public address in a user accounts name you would have two. I need to think more on this and how it should be implemented. I will say for sure that fees between those two wallets will be zero.
+### Hot & Cold Model
 
-### Code Bounties
+Every Modulr account comes with two linked wallets:
+- **Cold Wallet (MDR):**
+    - Holds network tokens, digital assets, and organizational treasuries.
+    - Required for high-value transactions such as token transfers, digital asset management, and governance approvals.
+    - Protected by stronger security (hardware wallet, multi-sig, time locks).
+- **Hot Wallet (MTR):**
+    - Holds closed-loop network credits used for day-to-day services such as storage, compute, robotics access, and web functions.
+    - Designed for seamless interaction without repeatedly unlocking a cold key.
+    - Non-transferable between users, ensuring AML compliance.
+Internal transfers between hot and cold wallets are **instant and fee-free**.
+
+---
+### Top-Ups and Credits
+
+Users manually “top up” their hot wallets by converting MDR into MTR or by purchasing credits directly via fiat payment (through Modulr’s website, payment partners, or retail gift cards). This design allows:
+- **Crypto path:** Convert MDR → MTR.
+- **Fiat path:** Buy prepaid credits with local payment methods.
+- **Retail path:** Redeem Modulr gift cards for MTR (via providers such as Blackhawk).
+
+> **Incentive:** Users who top up using the network’s native token (MDR, or wrapped MDR on Ethereum) receive **bonus MTR credits**. Because Modulr avoids third-party processing fees on these transactions, more value flows directly back to the user.
+
+Balances in both wallets are displayed side by side. MTR is always denominated in the user’s **local currency equivalent**, so service pricing is transparent and intuitive.
+
+---
+### Refunds and Disputes
+
+The MTR system allows for flexible customer protections:
+- **Automatic Reversal:** If the network detects that a service was not delivered (e.g., a failed compute job), the MTR payment is canceled or refunded automatically.
+- **Dispute Resolution:** If a case is contested after a partner has been paid, Modulr may issue a refund from its commission reserves. This ensures that:
+    - Partners are paid promptly.
+    - Users receive customer service protections.
+    - The ecosystem retains trust, something rarely found in blockchain environments.
+
+---
+### Organizational Wallets
+
+Organizations use the same hot/cold split:
+- **Org Cold Wallet (MDR):** Managed by roles such as President/Treasurer via multi-sig. Stores the treasury, digital assets, and governance authority.
+- **Org Hot Wallets (MTR):** Scoped allowances assigned to members. For example: *a developer may receive 200 MTR/month to run builds on Modulr.Code*
+
+Admins can:
+- View total treasury balances.
+- Monitor all member allowances and spending activity.
+- Restrict allowances to specific service categories (e.g., block “gaming” services on a corporate account).
+
+---
+### Commissions and Fees
+
+Each spend of MTR incurs a **network commission** (lighter than typical platforms such as Steam). This commission is transparent to users and enables Modulr to:
+- Sustain infrastructure and operations.
+- Run **promotions and discounts** (e.g., 10% off network usage fees during a special event).
+- Provide dispute refunds without penalizing partners.
+
+MDR itself carries a **validator access fee** whenever clients interact with the network. Instead of fluctuating “gas markets” as seen on Ethereum, Modulr uses **protocol-defined flat fees** that are published in a configuration file, synchronized across validators.
+- This configuration file is **immutable by individual validators** and can only be updated through **on-chain governance**, ensuring fairness and consistency.
+- Fee adjustments allow the network to adapt over time to real-world factors such as electricity costs, while still protecting users from volatility or price-gouging.
+
+**Fee Categories:**
+- **Basic requests:** free under cooldown rules to prevent spam.
+- **Job assignments and partner routing:** small fixed fee in MDR.
+- **High-priority or advanced validator functions:** higher flat fee.
+- **Special operations (e.g., cross-network migration):** individually priced.
+
+---
+### Subscriptions
+
+In addition to pay-as-you-go (PAYG) usage, Modulr offers **subscription tiers** that remove validator access fees for covered actions. Subscriptions provide:
+- **Predictability:** unlimited usage within defined limits, ideal for power users and organizations.
+- **Fairness:** generous caps to prevent abuse, but ample room for normal daily activity.
+- **Flexibility:** available for purchase in both **fiat** (credit card, payment processors) and **MDR**.
+
+**Perks and Incentives:**
+- Subscriptions purchased with MDR (or wrapped MDR on Ethereum) include **bonus perks**, such as:
+    - Extra MTR credits added to the hot wallet.
+    - A free custom username for new accounts.
+    - Occasional discounts (e.g., extra free month when paying in MDR).
+- These benefits serve both as a **thank you to crypto-native users** and a way to lower network processing costs by encouraging use of native tokens.
+
+This hybrid model ensures that Modulr subscriptions feel familiar to mainstream users (like a SaaS product), while still rewarding the crypto community for using the network’s native currency.
+
+---
+### Digital Assets Tab
+
+In addition to MDR and MTR balances, the wallet also manages **digital assets** such as NFTs, licenses, or files. These appear under a separate tab, giving users a clear view of everything they own without mixing assets with balances.
+
+---
+### Summary
+
+By pairing MDR for secure custody with MTR for everyday activity, Modulr delivers a wallet system that is:
+- **Usable:** seamless daily interactions without friction.
+- **Secure:** assets and governance always gated by the cold wallet.
+- **Compliant:** MTR credits are non-transferable by design.
+- **Transparent:** balances shown in local currency, with clear fees and commissions.
+- **Flexible:** supports both individual and organizational allowances.
+- **Rewarding:** bonus credits for topping up or subscribing with the network’s native token.
+
+This hot/cold model ensures that Modulr feels as simple as topping up a prepaid balance, while retaining the full power of a secure blockchain system.
+
+## Code Bounties
 
 To ensure Modulr remains a living, evolving ecosystem, a portion of the network’s resources are dedicated to **developer incentives**. Modulr has seeded a **Developer Fund of 1 million MDR** to reward contributions that strengthen the protocol, expand co-chains, and improve the ecosystem.
 
