@@ -635,7 +635,7 @@ Anyone can generate an account on Modulr just as they can with any other blockch
 
 While usernames are not a requirement, public keys are necessary for adding you to the public ledger and allowing other users to reach you. This ensures that even new users without tokens can still participate and interact on the network. Users can receive tokens through drops or earn them by actively participating in the network.
 
-If you choose to register a username, we implement a staking system to ensure they are genuinely used and to prevent malicious actors from squatting on common names. Users are required to stake a set amount, equivalent to **44 USP**. If the user remains active on the network (using chains, sending digital assets, or creating content consumed by other users), they will receive the stake back. The account will be reviewed 30 days after generation to determine if it qualifies for the refund. If the user fails to meet the activity requirements, the period will be extended by another 30 days. If after 90 days, the user still doesn't meet the requirement the stake is lost.
+If you choose to register a username, we implement a staking system to ensure they are genuinely used and to prevent malicious actors from squatting on common names. Users are required to stake a set amount, equivalent to **44 MTR**. If the user remains active on the network (using chains, sending digital assets, or creating content consumed by other users), they will receive the stake back. The account will be reviewed 30 days after generation to determine if it qualifies for the refund. If the user fails to meet the activity requirements, the period will be extended by another 30 days. If after 90 days, the user still doesn't meet the requirement the stake is lost.
 
 Although this approach necessitates a stake for securing a unique name, it effectively prevents gaming the system while maintaining user anonymity within the base protocol. Note that account names are non-transferable due to security concerns, ensuring that each username is tied to its original account.
 
@@ -1017,7 +1017,7 @@ While a balance of power is key that doesn't completely ensure decentralization,
 
 ### Pool-less Protocol
 
-While having a separation of power between the validators who maintain the blockchain and the partners who hold the ledger and process the payments. There is another reason the validators exist, and that is to keep mining pools away from Modulr. There is no need for them; the Validators already perform token distributions and traffic control so there is no benefit for another entity to perform that function. This also gives the partners full rewards since validators don't earn SP.
+While having a separation of power between the validators who maintain the blockchain and the partners who hold the ledger and process the payments. There is another reason the validators exist, and that is to keep mining pools away from Modulr. There is no need for them; the Validators already perform token distributions and traffic control so there is no benefit for another entity to perform that function. This also gives the partners full rewards since validators don't earn MTR.
 
 ## Wallets
 
