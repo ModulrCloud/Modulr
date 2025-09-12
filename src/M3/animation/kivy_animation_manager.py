@@ -62,9 +62,10 @@ class KivyAnimationManager(BaseAnimationManager):
     delay: float = 0.0,
     easing: str = "in_out_quad"
 ) -> None:
-        """
+        '''
         Uniformly scale each widget’s size up by the given factor.
-        """
+        '''
+
         for w in widgets:
             orig_w, orig_h = w.size
             target_size = (orig_w * scale, orig_h * scale)
@@ -79,9 +80,10 @@ class KivyAnimationManager(BaseAnimationManager):
         delay: float = 0.0,
         easing: str = "in_out_quad"
     ) -> None:
-        """
+        '''
         Uniformly scale each widget’s size down by the given factor.
-        """
+        '''
+        
         for w in widgets:
             orig_w, orig_h = w.size
             target_size = (orig_w * scale, orig_h * scale)
@@ -96,10 +98,11 @@ class KivyAnimationManager(BaseAnimationManager):
     delay: float = 0.0,
     easing: str = "linear"
 ) -> None:
-        """
+        '''
         Rotate each widget around its center by the given angle.
         Attaches a Rotate instruction if missing, then animates its 'angle'.
-        """
+        '''
+
         from kivy.graphics import PushMatrix, Rotate, PopMatrix
 
         for w in widgets:
@@ -152,9 +155,10 @@ class KivyAnimationManager(BaseAnimationManager):
     delay: float = 0.0,
     easing: str = "in_out_quad"
 ) -> None:
-        """
+        '''
         Draw a glowing border around each widget, fading in then out.
-        """
+        '''
+
         rgba = get_color_from_hex(color)
         for w in widgets:
             # clear any old glow
@@ -202,10 +206,11 @@ class KivyAnimationManager(BaseAnimationManager):
         color: str = "#FFFFFF",
         delay: float = 0.0
     ) -> None:
-        """
+        '''
         Draw an expanding circle (ripple) from the center of each widget,
         fading out as it grows.
-        """
+        '''
+
         rgba = get_color_from_hex(color)
         for w in widgets:
             # clear previous
@@ -241,9 +246,10 @@ class KivyAnimationManager(BaseAnimationManager):
         text: str,
         char_delay: float = 0.05
     ) -> None:
-        """
+        '''
         “Type” the given text into each Label, one character at a time.
-        """
+        '''
+
         def _type(w: Label, idx: int = 0):
             if idx <= len(text):
                 w.text = text[:idx]
