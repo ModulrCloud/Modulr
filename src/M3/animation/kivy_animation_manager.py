@@ -1,4 +1,4 @@
-from typing import Any, Dict, List, Tuple
+from typing import Any, List
 from kivy.animation import Animation
 from kivy.clock import Clock
 from kivy.graphics import Color, Rectangle, PushMatrix, PopMatrix, Rotate
@@ -83,7 +83,7 @@ class KivyAnimationManager(BaseAnimationManager):
         '''
         Uniformly scale each widget’s size down by the given factor.
         '''
-        
+
         for w in widgets:
             orig_w, orig_h = w.size
             target_size = (orig_w * scale, orig_h * scale)
