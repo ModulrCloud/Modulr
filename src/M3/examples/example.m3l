@@ -49,7 +49,7 @@ id = "recover_account_button"
 label = "Recover Account"
 
 on_click = [
-  { intent = "recover_account", param = "@UndChain/auth/recovery.psu" }
+  { intent = "recover_account", param = "@Modulr/auth/recovery.psu" }
 ]
 
 [[frame.primary_button]]
@@ -57,5 +57,5 @@ id = "login_button"
 label = "Log In"
 
 on_click = [
-  { intent = "do_login", param = "@UndChain/auth/login.psu" }
+  { intent = "do_login", param = "@Modulr/auth/login.psu" }
 ]
