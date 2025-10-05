@@ -1,3 +1,12 @@
+# Modulr.Core Whitepaper
+Revision 2.0
+
+Last Updated on: 2025-10-05
+
+By: Christopher Boggs
+
+---
+
 # Table of Contents
 
 **[1. Introduction & Vision](#1-introduction--vision)**
