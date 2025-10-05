@@ -2,7 +2,7 @@
 
 ## Chapter - [1. Introduction & Vision](#1-introduction--vision)
 
-** [2. System Architecture](#2-system-architecture) **
+**[2. System Architecture](#2-system-architecture)**
 
   - [2.1 Network Fundamentals](#21-network-fundamentals)
   - [2.2 Validators](#22-validators)
