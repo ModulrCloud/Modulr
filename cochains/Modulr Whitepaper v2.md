@@ -1,6 +1,6 @@
 # Table of Contents
 
-## Chapter - [1. Introduction & Vision](#1-introduction--vision)
+**[1. Introduction & Vision](#1-introduction--vision)**
 
 **[2. System Architecture](#2-system-architecture)**
 
@@ -11,7 +11,8 @@
   - [2.5 Block Generation](#25-block-generation)
   - [2.6 Stages of Block Formation](#26-stages-of-block-formation)
   - [2.7 Security Fundamentals](#27-security-fundamentals)
-## [3. User Types](#3-user-types)
+
+**[3. User Types](#3-user-types)**
 
   - [3.1 Clients](#31-clients)
   - [3.2 Partners](#32-partners)
@@ -31,7 +32,8 @@
     - [3.6.4 Creators](#364-creators)
     - [3.6.5 Organizations](#365-organizations)
     - [Decentralization Conclusion](#decentralization-conclusion)
-## [4. Wallets and Economics](#4-wallets-and-economics)
+
+**[4. Wallets and Economics](#4-wallets-and-economics)**
 
   - [4.1 Wallet Structure](#41-wallet-structure)
   - [4.2 MDR vs. MTR](#42-mdr-vs-mtr)
@@ -40,7 +42,8 @@
   - [4.5 Refunds, Disputes, and Customer Protection](#45-refunds-disputes-and-customer-protection)
   - [4.6 Reliability Scores](#46-reliability-scores)
   - [4.7 Token Transfers and Fees](#47-token-transfers-and-fees)
-## [Chapter 5: Digital Assets on Modulr](#chapter-5-digital-assets-on-modulr)
+
+**[Chapter 5: Digital Assets on Modulr (#chapter-5-digital-assets-on-modulr)**
 
   - [5.1 Asset Minting and Permanence](#51-asset-minting-and-permanence)
   - [5.2 Transfers and Ownership](#52-transfers-and-ownership)
@@ -56,7 +59,8 @@
   - [5.5 Economic Role of Digital Assets](#55-economic-role-of-digital-assets)
   - [5.6 Asset Retirement and Deletion](#56-asset-retirement-and-deletion)
   - [5.7 Future Asset Applications](#57-future-asset-applications)
-## [Chapter 6 – Ecosystems & Co-Chains](#chapter-6--ecosystems--co-chains)
+
+**[Chapter 6 – Ecosystems & Co-Chains](#chapter-6--ecosystems--co-chains)**
 
   - [6.1 Modulr.Core Overview](#61-modulrcore-overview)
     - [6.1.1 Messaging & Communication](#611-messaging--communication)
@@ -102,7 +106,8 @@
     - [6.3.8 Modulr.Gaming](#638-modulrgaming)
   - [6.4 Summary on Co-Chains](#64-summary-on-co-chains)
   - [6.5 Future Co-Chain Concepts](#65-future-co-chain-concepts)
-## [Chapter 7 – Developer Tools & Incentives](#chapter-7--developer-tools--incentives)
+
+**[Chapter 7 – Developer Tools & Incentives](#chapter-7--developer-tools--incentives)**
 
   - [7.1 Goals for Builders](#71-goals-for-builders)
   - [7.2 Pseudo, a secure by design programming model](#72-pseudo-a-secure-by-design-programming-model)
@@ -123,7 +128,8 @@
     - [Modular Verification seal](#modular-verification-seal)
   - [7.7 How this scales the ecosystem](#77-how-this-scales-the-ecosystem)
     - [Why build on Modulr instead of launching a token](#why-build-on-modulr-instead-of-launching-a-token)
-## [Chapter 8 – Roadmap and Conclusions](#chapter-8--roadmap-and-conclusions)
+
+**[Chapter 8 – Roadmap and Conclusions](#chapter-8--roadmap-and-conclusions)**
 
   - [8.1 Roadmap overview](#81-roadmap-overview)
     - [8.1.1 MVP roadmap overview](#811-mvp-roadmap-overview)
