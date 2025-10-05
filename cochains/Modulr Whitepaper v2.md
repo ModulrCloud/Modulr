@@ -43,7 +43,7 @@
   - [4.6 Reliability Scores](#46-reliability-scores)
   - [4.7 Token Transfers and Fees](#47-token-transfers-and-fees)
 
-**[Chapter 5: Digital Assets on Modulr] (#chapter-5-digital-assets-on-modulr)**
+**[Chapter 5: Digital Assets on Modulr](#chapter-5-digital-assets-on-modulr)**
 
   - [5.1 Asset Minting and Permanence](#51-asset-minting-and-permanence)
   - [5.2 Transfers and Ownership](#52-transfers-and-ownership)
