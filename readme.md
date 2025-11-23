@@ -461,7 +461,7 @@ Block timing and related parameters may be adjusted based on real-world data to 
 
 ## Tokenomics
 
-Modulr employs **MDR** to incentivize validators and partners. Partners do not directly earn MDR from the network however, that is only done via the validators. Rather the partners set their price for services on the network and that fee for the service is paid to the partner. This fee system is done via the **MTR** credit system which is an asset that can only be used for services on the network. More on this later.
+Modulr employs **MDR** to incentivize validators, partners, and users. Partners do not directly earn MDR from the network however, that is only done via the validators. Rather the partners set their price for services on the network and that fee for the service is paid to the partner. This fee system is done via the **MTR** credit system which is an asset that can only be used for services on the network. More on this later.
 
 *Note: The blockchain experienced a soft launch on April 24, 2024. All token emissions from this date until the network officially launches are effectively burned and will not enter circulation.*
 
@@ -469,48 +469,25 @@ Modulr employs **MDR** to incentivize validators and partners. Partners do not d
 
 ### Modulr Token (MDR)
 
-MDR is the backbone token of the Modulr network and the primary reward mechanism for validators. It follows a deflationary model inspired by Bitcoin, introducing scheduled reductions in daily emissions — referred to as **halvings** — to promote long-term sustainability while ensuring validator incentives remain intact.
+MDR is the backbone token of the Modulr network and the primary reward mechanism for validators. Although MDR has a capped supply of 1 million, validators will be paid in MDR (taken from the ecosystem fund or after being purchased on the open market with revenue received). 
 
 #### Key Features
-
-1. **Initial Allocation:** 4,000,000 MDR minted at launch. Of this supply, **1,000,000 MDR exists on Ethereum as eMDR**, while **3,000,000 MDR remains on the native Modulr chain**.
     
-2. **Cross-Chain Bridge:** MDR will be transferred between the Modulr chain and Ethereum through a **slot-based bridge mechanism**:
+1. **Cross-Chain Bridge:** eMDR & MDR will be transferred between the Modulr chain and Ethereum through a **slot-based bridge mechanism**:
     
     - When a user sends MDR from Modulr to Ethereum, it is locked into a **slot** on the Modulr side, and an equivalent amount of eMDR is released from a bridge wallet on Ethereum.
     - When a user sends eMDR back to Modulr, it is locked on Ethereum, which **opens a slot** on Modulr and releases the native MDR.
     - This design ensures the circulating supply remains balanced across ecosystems.
     - _(Note: The current v1 contract introduces a controlled bottleneck to maintain stability. A v2 contract is planned to optimize throughput and reduce friction.)_
-        
-3. **Daily Emission:** Begins at **4092 MDR per day** and reduces every four years through halvings until stabilizing at **1 MDR per day** indefinitely. *(Emission values follow binary division, aligning with 2ⁿ reductions.)*
-    
-4. **Dual Access Model:**
+            
+2. **Dual Access Model:**
     
     - **Subscription:** Users can pay MDR to unlock flat-rate access with capped transactions per minute.
     - **PAYG (Pay-as-you-go):** Users can pay per transaction, consuming MDR as needed.
         
-5. **Perpetual Incentive Model:** By never reducing emissions to zero, Modulr ensures validator rewards persist indefinitely, while scarcity still increases over time.
+3. **Capped Supply Model:** By capping supply at 1,000,000 MDR, both validators and users do not have to worry about future dilution of value via inflation. Scarcity itself drives value, however the Modulr team will further add value to the token by paying validators in MDR which is purchased off of the open market. With continued purchasing of MDR from revenue proceeds, this creates a flywheel effect that is beneficial for all holders. 
     
 
----
-
-#### Halving Schedule
-
-|Halving|Year|Tokens Per Day|
-|---|---|---|
-|1|1|4,092|
-|2|4|2,048|
-|3|8|1,024|
-|4|12|512|
-|5|16|256|
-|6|20|128|
-|7|24|64|
-|8|28|32|
-|9|32|16|
-|10|36|8|
-|11|40|4|
-|12|44|2|
-|13+|48+|1|
 
 ---
 
