@@ -6,7 +6,7 @@ We're thrilled to have you here! Modulr's open network for robotics, AI, data, a
 
 If you're a developer interested in contributing to Modulr, have questions, or simply want to join the discussion with like-minded enthusiasts, we invite you to connect with our community:
 
-Telegram: https://t.me/modulrportal
+**Telegram:** https://t.me/modulrportal
 
 >**Discord**
 >
