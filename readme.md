@@ -68,36 +68,109 @@ Our mission is to make robotics accessible to everyone. We're building an open l
 
 In fact, the ONLY way to connect all of the world's for-profit companies in robotics, AI, data, and compute into one unified network is via a neutral third party like Modulr.
 
-# Co-Chains
+# Modular Machine Architecture
 
-Co-Chains is how the network expands it's abilities and services. Anyone can create and own a co-chain, in fact there is a classification of user called **Creators** mentioned later. The Creator can set their fees thus earning based off the code they have written. Modulr natively does NOT allow the creation of tokens, but co-chains could add that functionality. The goal in doing this is to reduce the amount of tokens that go in circulation.
+### A Composable Network for Robotics and Beyond
 
-All of the base co-chains will start with `Modulr.` as that is our organization name on Modulr. This system not only brands our product but it also allow users to easily know who the owner is of this particular chain. This is encouraged for other developers, but not required as you can name your co-chain what you please.
+Modulr is built around one core idea: **everything should be modular.**&#x20;
 
-## Why Co-Chains?
+Instead of locking users into a single provider or stack, Modulr lets them choose exactly what they need—robots, AI models, data services, compute, storage, and more—from different vendors in one open network.
 
-There are multiple reasons we call them co-chains rather than layer 2s:
+The result is a system where robotics, intelligence, and infrastructure connect seamlessly, and users can build solutions as easily as assembling building blocks.
 
-1. Co-chains allows for better security since at each block completion a co-chain blends it's hash with a co-chain it's linked to, this reduces the risk of a attack on the network.
+***
 
-2. It expands Pseudo (Modulr's Pythonic programming language), by allowing others to import functions (services) from other chains. You can choose to private a function or set fees on it. Remember you own it...
+### How It Works
 
-3. It provides a sense of ownership for your work and allows you to monetize on it so you can continue to make it better and help you with your personal goals. You can also transfer ownership of a co-chain to another user or organization on the network.  
+Through the Modulr interface, users can:
 
-4. Personally it's better than saying layer 2; you're a creator on this network and providing value, you should be recognized for it.
+1. **Find and rent robots** available across the world.
+2. **Choose add-ons** like compute power, data collection and storage, or AI models to enhance performance.
+3. **Operate remotely** through the your normal browser, while all usage and work are verified on-chain through Proof of Utility.
 
-## Understanding Co-Chains: Building Blocks of Modulr
+Each component—robotic hardware, AI service, data stream, compute layer—is its own **module** within the marketplace. These modules can be combined, replaced, or upgraded at any time.
 
-Co-chains are specialized blockchain applications built on Modulr’s decentralized protocol. They enable developers to create targeted solutions, each tailored to specific use cases, while still integrating seamlessly with the broader ecosystem. To illustrate their potential, I am designing several foundational co-chains. These not only add value to the network but also serve as practical examples for developers aiming to build on Modulr.
+It’s a flexible system that adapts to what users need, not the other way around.
 
-### Why I’m Building These Co-Chains
+***
 
-As the creator of Modulr, my goal is to demonstrate how co-chains can unlock innovative solutions. By developing these foundational co-chains, I aim to:
+### Why Modularity Matters
+
+Every robotics use case is different.&#x20;
+
+A farming robot doesn’t need the same tools as a retail service bot or a telepresence rover. By designing Modulr as a **composable network**, we make it possible for anyone to:
+
+* Mix and match providers based on cost, location, or capability.
+* Deploy specialized robots with tailored AI and compute.
+* Integrate new vendors as technology evolves—without leaving the network.
+
+This approach gives robotics companies, developers, and operators full freedom to customize their stack without rebuilding infrastructure from scratch.
+
+***
+
+### A Marketplace That Extends Beyond Robots
+
+While Modulr’s first focus is robotics, the same architecture supports AI, compute, and data services independently.
+
+Over time, **these services will be available even without a physical robot**—letting anyone rent compute, share datasets, or deploy AI applications directly through the Modulr network.
+
+Modulr is built to evolve from a robotics platform into a unified marketplace for digital and physical automation.
+
+***
+
+### Built for Expansion
+
+Each part of the system—from robots to AI to data—is modular by design. That modularity extends to co-chains, specialized networks that handle specific verticals like:
+
+* **Modulr.Robotics** – real-time teleoperation and fleet management
+* **Modulr.AI** – intelligence and model deployment
+* **Modulr.Gaming** – physical games and entertainment
+* **Modulr.Data** – telemetry, storage, and analytics
+
+This structure allows each co-chain to specialize and scale independently while still operating on the same foundation.
+
+# Co-chains
+
+Co-chains are **specialized sub-networks** built on Modulr’s foundation. Each one is designed for a specific domain—like robotics, AI, data, gaming, etc.—and optimized for the kind of workloads and logic that domain needs.
+
+Instead of cramming every function into one universal chain, Modulr uses co-chains to separate complexity by purpose. This keeps the system efficient, scalable, and tailored to real-world use cases.
+
+Every co-chain inherits Modulr’s base-layer security, Proof-of-Utility incentives, and interoperability standards—so they all work together, even when they serve very different industries.
+
+***
+
+### Why Co-chains Matter
+
+The robotics-enabled economy isn’t one-size-fits-all. The tools that power teleoperation aren’t the same as those used for AI inference, or for running a gaming network.
+
+Co-chains give Modulr the flexibility to:
+
+* Launch domain-specific networks with their own logic, pricing, and data models.
+* Evolve quickly without overloading the core network.
+* Connect specialized industries (like AI and robotics) through one unified economy.
+
+Simply put, **your network should be purpose-built for the task you're doing**. Trying to remote operate robots on a blockchain that's optimized for defi or RWA or anything else will create a poor user experience for both users and developers.&#x20;
+
+When users teleoperate robots on Modulr, they'll be using the Robotics co-chain (with potential interaction with the AI, data, and compute co-chains). If a developer wants to run & sell AI models, he or she will be using the AI co-chain.&#x20;
+
+Each task is prioritized for its own co-chain.&#x20;
+
+Modulr will launch co-chains internally first, ensuring every network operates at the standard of performance, security, and interoperability required for real-world systems. Once these foundational networks mature, the same tools will be made available for external developers and organizations to deploy their own co-chain.
+
+***
+
+## Understanding Co-chains: Building Blocks of Modulr
+
+Co-chains are specialized blockchain applications built on Modulr’s decentralized protocol. They enable developers to create targeted solutions, each tailored to specific use cases, while still integrating seamlessly with the broader ecosystem. To illustrate their potential, Modulr is designing several foundational co-chains. These not only add value to the network but also serve as practical examples for developers aiming to build on Modulr.
+
+### Why We're Building These Co-chains
+
+Our goal is to demonstrate how co-chains can unlock innovative solutions. By developing these foundational co-chains, we aim to:
 
 1. **Showcase Efficient Data Management:**  
     Demonstrate how to use storage, computation and access, to interact with the network in a secure and efficient.
     
-2. **Highlight Co-Chain Collaboration:**  
+2. **Highlight Co-chain Collaboration:**  
     Illustrate how co-chains can integrate and expand upon one another to create complex, interdependent systems (e.g., using Modulr.Web with Modulr.Social to integrate streaming video).
     
 3. **Inspire Developer Creativity:**  
@@ -185,7 +258,7 @@ Modulr.Core serves as the foundation of Modulr, coordinating critical protocols,
 
 ### Modulr.AI
 
-Modulr.AI (formally Mimic) is Modulr’s dedicated AI co-chain, designed to revolutionize how artificial intelligence is deployed and used across decentralized networks. The Mimic co-chain focuses on creating **specialized AI models** tailored for specific tasks, ensuring efficiency, modularity, and adaptability. These models are connected to a **hypervisor system**, which intelligently routes incoming requests to the appropriate AI for seamless performance. Most important its used all throughout Modulr as a system for assisting user interaction as well as moderation. 
+Modulr.AI (formally Mimic) is Modulr’s dedicated AI co-chain, designed to revolutionize how artificial intelligence is deployed and used across decentralized networks. The Mimic co-chain focuses on creating **specialized AI models** tailored for specific tasks, ensuring efficiency, modularity, and adaptability. These models are connected to a **hypervisor system**, which intelligently routes incoming requests to the appropriate AI for seamless performance. Most importantly, it's used all throughout Modulr as a system for assisting user interaction as well as moderation. 
 
 If you would like to learn more please see [Modulr.AI](cochains/AI.md)
 
@@ -250,15 +323,9 @@ If you would like to learn more please see [Modulr.Gaming](cochains/Gaming.md)
 
 ---
 
-### Summary on Co-Chains
+#### Potential Co-chain Ideas
 
-As you can see, Modulr offers an expansive framework for developing diverse co-chains, each contributing unique functionality to the ecosystem. While I may not be able to personally develop every co-chain idea presented here, my goal is to create a strong foundation that inspires innovation and ensures the protocol can adapt to the varied needs of these co-chains.
-
-Through firsthand experience in building these systems, I’ve learned that actively using a product uncovers insights that might otherwise be missed. My hope is that developers approach their creations with a focus on delivering tangible value—not just another asset class—to enhance the ecosystem as a whole.
-
-#### Potential Co-Chain Ideas
-
-To spark inspiration for future development, here are a few ideas for co-chains that I believe could thrive on Modulr:
+To spark inspiration for future development, here are a few ideas for co-chains that could thrive on Modulr:
 
 1. **Decentralized Rideshare and Delivery Services**  
     Imagine a decentralized version of Uber or DoorDash, enabling peer-to-peer ride sharing and delivery services without centralized control. Such a system could bring fairer pricing, more equitable profit distribution, and enhanced user control.
@@ -272,7 +339,7 @@ To spark inspiration for future development, here are a few ideas for co-chains 
 4. **Decentralized Learning Platforms**  
     A co-chain dedicated to education, offering decentralized courses, certifications, and knowledge sharing. Instructors can host live classes, sell pre-recorded lessons, or even provide one-on-one tutoring sessions. This co-chain could integrate Mimic to act as a personalized tutor, guiding students through material and answering their questions.
     
-5. **Crowdfunding and DAO Co-Chains**  
+5. **Crowdfunding and DAO Co-chains**  
     A co-chain designed for fundraising via decentralized autonomous organizations (DAOs). Projects can raise funds through transparent smart contracts, while contributors have voting power to decide the project’s direction. This system could include milestone-based funding, ensuring accountability for developers.
     
 6. **Digital Healthcare Services**  
@@ -301,7 +368,7 @@ To spark inspiration for future development, here are a few ideas for co-chains 
 
 	This co-chain paves the way for decentralized streaming platforms—think of it as a blockchain-powered alternative to services like Netflix or Spotify—where content ownership, control, and monetization are shifted back to the creators and their audiences. Additionally, creators can use the built-in functionality of Pages to host their libraries and leverage AdCoin for monetization options.
 
-## Co-Chain choice (Open vs. Closed Source)
+## Co-chain choice (Open vs. Closed Source)
 
 While I firmly believe in the principles of open-source development, Modulr also provides the flexibility to run closed-source code. This capability is achieved through **Preferred Partners**, systems that execute Creator code directly without requiring compilation by the Code Ledger co-chain. However, implementing closed-source systems introduces challenges, particularly regarding security and transparency, as public scrutiny of the code is limited.
 
@@ -342,7 +409,7 @@ Modulr features four distinct user types, each designed to balance power and ens
 
 Blocks on Modulr are generated using a fixed block time rather than size to ensure consistent and predictable operation. This design choice mitigates the risk of rapid chain expansion by offloading completed items such as job files, work files, and payout lists to partners for storage. Additionally, a process called **The Convergence** consolidates the chain to optimize storage and performance; this is explained further in the encryption standards section. Each block is generated in three distinct stages, with each stage consisting of three steps.
 
-The timing of block generation will initially be experimental. Blocks need to be long enough to accommodate a sufficient number of job requests while maintaining responsiveness for users. The current target is **60 seconds per block**. While blocks finalize at this interval, transaction propagation is near-instantaneous, providing users with a fast and seamless experience.
+Modulr's current blocktime is **1 second per block**. While blocks finalize at this interval, transaction propagation is near-instantaneous, providing users with a fast and seamless experience, which is critical for working with robots and having low latency. 
 
 ### **Transaction Throughput and Responsiveness**
 
