@@ -1,10 +1,12 @@
 # Welcome to Modulr!
 
-We're thrilled to have you here! Modulr is building the next generation of decentralized cloud services, and we'd love for you to join us in shaping the future.
+We're thrilled to have you here! Modulr's open network for robotics, AI, data, and compute will be the foundation for the global robot economy, and we'd love for you to join us in shaping the future.
 
 ### 🛠️ **Developer Discussions & Community Support**
 
 If you're a developer interested in contributing to Modulr, have questions, or simply want to join the discussion with like-minded enthusiasts, we invite you to connect with our community:
+
+Telegram: https://t.me/modulrportal
 
 >**Discord**
 >
