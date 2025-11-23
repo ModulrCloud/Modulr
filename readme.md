@@ -16,15 +16,57 @@ If you're a developer interested in contributing to Modulr, have questions, or s
 
 # What is Modulr?
 
-Modulr is a PoU (Proof of Utility) blockchain; that can best be thought of as a decentralized cloud service in which anyone can participate. There are three different utilities that can be performed on the network, that work together to create similar functionality as conventional cloud service providers.
+Modulr is a global network that lets anyone **operate robots anywhere on Earth**—instantly, securely, and in real time.
 
-1. **Computation** - The thought behind this function would be items that either are too complex for a ordinary machine to complete in a reasonable amount of time (training AI models, 3D rendering or DNA sequencing) or something that requires modifying data that must be shared with a group (think servers).
+Through the Modulr interface, a user can connect to a machine across the world, stream live data, and control it as if they were standing beside it.
 
-2. **Storage** - In order to compute you must have access to data to compute on. Modulr has storage built into it's language so you don't have to use another service. This allows for things such as databases and the ability to store large AI models. 
+This ability to bridge distance and bring physical systems online is the foundation of the next global industry. Robotics, AI, and compute are converging into a single programmable layer. Modulr is how people interact with it.
 
-3. **Access** - This is a functionality that will be expanded more in the future, but for now think of this as the ability to have access to specialty equipment in a specific location such as linking two or more users together, surrogates or VPN like services. When fully realized it is meant to replace the IP protocol by enable secure communications that are digital signed from the source.
+***
 
- When mixing these three utility types this will enable a full cloud experience that can do things such as spin up gaming servers, webpages and virtual computers. What makes this different than the way the internet is ran today is that anyone can participate and earn rewards for providing utility to the network. This reduces the need for massive data centers and spreads out computational resources throughout a geographic area. This will **NOT** eliminate centralized services, in fact there will be ways (via access) in which you can still direct to a centralized service. The goal of the network is to allow both the centralized and the decentralized systems to co-exist and allow the consumer to choose.
+### The Core Idea
+
+We built Modulr around a simple principle:&#x20;
+
+**Any machine, anywhere, should be operable through a shared network.**
+
+To make that possible, Modulr provides two key capabilities:
+
+1. **Teleoperation at global scale** - low-latency, real-time control for robots and connected systems.
+2. **Open access to intelligence and resources** - rent or deploy AI models, data services, and compute directly through the network.
+
+Together, these create a practical foundation for what we call the **robot-enabled economy,** where robotics becomes accessible to both individuals and businesses at scale. Robots are often expensive, challenging to setup for non-developers, and superfluous for long-term ownership.
+
+Modulr unlocks access to the world's robots, much like Airbnb unlocks access to the world's vacation spots.&#x20;
+
+***
+
+### Why it Matters
+
+Most robotic systems today are closed—limited to a single for-profit company, manufacturer, or software stack. This slows progress, increases cost, and prevents collaboration.
+
+Modulr removes those barriers.
+
+It connects machines, intelligence, and infrastructure into an open, verifiable network that anyone can build on.
+
+Modulr makes it possible to:
+
+* Control industrial, agricultural, or exploratory robots from anywhere.
+* Deploy fleets of service robots in hospitality, logistics, tourism, and more.
+* Integrate AI models for perception, language, or decision-making directly into live robot operations.
+* Rent or contribute compute, data, or AI applications that other operators can use.
+
+From dangerous jobs and disaster relief to education and entertainment, Modulr turns robotics into an accessible, peer-to-peer network for nearly every industry on Earth. For a full list of possibilities, please see [modulr-use-cases](https://modulr.gitbook.io/modulr.cloud/strategic-overview/modulr-use-cases "mention").
+
+By combining global teleoperation with shared access to AI, data, and compute, Modulr enables a world where robots are not isolated tools, but part of a connected global workforce.
+
+***
+
+### The Mission
+
+Our mission is to make robotics accessible to everyone. We're building an open layer where people, robots, and AI can work together without geographic or institutional limits.&#x20;
+
+In fact, the ONLY way to connect all of the world's for-profit companies in robotics, AI, data, and compute into one unified network is via a neutral third party like Modulr.
 
 # Co-Chains
 
