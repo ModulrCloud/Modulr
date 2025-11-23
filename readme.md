@@ -16,11 +16,17 @@ If you're a developer interested in contributing to Modulr, have questions, or s
 
 # What is Modulr?
 
-Modulr is a global network that lets anyone **operate robots anywhere on Earth**—instantly, securely, and in real time.
+### In a Nutshell
 
-Through the Modulr interface, a user can connect to a machine across the world, stream live data, and control it as if they were standing beside it.
+Modulr lets anyone **operate any robot from anywhere on Earth**—instantly, securely, and in real time.
 
-This ability to bridge distance and bring physical systems online is the foundation of the next global industry. Robotics, AI, and compute are converging into a single programmable layer. Modulr is how people interact with it.
+Robotic systems are incredibly complex and require a multitude of different technologies from numerous companies and service providers. Robots are expensive, challenging for people to access (and configure), and do not come pre-built with valuable add-ons (like AI models, storage, etc).
+
+Modulr solves this problem via **an open network that combines robotic systems, AI models/agents & apps, data management services, compute/edge computing power, and more under one roof.**&#x20;
+
+This open network is a modular, open framework for everyone to use and contribute to.&#x20;
+
+It will serve as the foundation of the future global robot economy.&#x20;
 
 ***
 
@@ -67,6 +73,7 @@ By combining global teleoperation with shared access to AI, data, and compute, M
 Our mission is to make robotics accessible to everyone. We're building an open layer where people, robots, and AI can work together without geographic or institutional limits.&#x20;
 
 In fact, the ONLY way to connect all of the world's for-profit companies in robotics, AI, data, and compute into one unified network is via a neutral third party like Modulr.
+
 
 # Modular Machine Architecture
 
